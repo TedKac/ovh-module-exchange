@@ -44,42 +44,54 @@
                                     <div class="oui-tile__definition">
                                         <strong class="d-block"
                                                 data-translate="exchange_dashboard_diag"></strong>
-                                        <button class="btn btn-xs" type="button"
-                                                data-translate="exchange_dashboard_diag_a_label"
-                                                data-ng-class="{'btn-success': ctrl.exchange.serverDiagnostic.isAValid, 'btn-warning': !ctrl.exchange.serverDiagnostic.isAValid}"
-                                                data-ng-if="!ctrl.exchangeServiceInfrastructure.isProvider()"
-                                                data-simplepopover="{{ctrl.exchange.serverDiagnostic.aTooltip}}"
-                                                data-simplepopover-title="{{'exchange_dashboard_diag_a_tooltip_title' | translate}}"
-                                                data-simplepopover-placement="bottom"
-                                                data-simplepopover-single="true">
-                                        </button>
-                                        <button class="btn btn-xs" type="button"
-                                                data-translate="exchange_dashboard_diag_aaaa_label"
-                                                data-ng-class="{'btn-success': ctrl.exchange.serverDiagnostic.isAaaaValid, 'btn-warning': !ctrl.exchange.serverDiagnostic.isAaaaValid}"
-                                                data-ng-if="ctrl.exchangeServiceInfrastructure.isDedicated() || ctrl.exchangeServiceInfrastructure.isDedicatedCluster()"
-                                                data-simplepopover="{{ctrl.exchange.serverDiagnostic.aaaaTooltip}}"
-                                                data-simplepopover-title="{{'exchange_dashboard_diag_aaaa_tooltip_title' | translate}}"
-                                                data-simplepopover-placement="bottom"
-                                                data-simplepopover-single="true">
-                                        </button>
-                                        <button class="btn btn-xs" type="button"
-                                                data-translate="exchange_dashboard_diag_ptr_label"
-                                                data-ng-class="{'btn-success': ctrl.exchange.serverDiagnostic.isPtrValid, 'btn-warning': !ctrl.exchange.serverDiagnostic.isPtrValid}"
-                                                data-ng-if="ctrl.exchangeServiceInfrastructure.isDedicated() || ctrl.exchangeServiceInfrastructure.isDedicatedCluster()"
-                                                data-simplepopover="{{ctrl.exchange.serverDiagnostic.ptrTooltip}}"
-                                                data-simplepopover-title="{{'exchange_dashboard_diag_ptr_tooltip_title' | translate}}"
-                                                data-simplepopover-placement="bottom"
-                                                data-simplepopover-single="true">
-                                        </button>
-                                        <button class="btn btn-xs" type="button"
-                                                data-translate="exchange_dashboard_diag_ptrv6_label"
-                                                data-ng-class="{'btn-success': ctrl.exchange.serverDiagnostic.isPtrV6Valid, 'btn-warning': !ctrl.exchange.serverDiagnostic.isPtrV6Valid}"
-                                                data-ng-if="ctrl.exchangeServiceInfrastructure.isDedicated() || ctrl.exchangeServiceInfrastructure.isDedicatedCluster()"
-                                                data-simplepopover="{{ctrl.exchange.serverDiagnostic.ptrv6Tooltip}}"
-                                                data-simplepopover-title="{{'exchange_dashboard_diag_ptrv6_tooltip_title' | translate}}"
-                                                data-simplepopover-placement="bottom"
-                                                data-simplepopover-single="true">
-                                        </button>
+                                        <oui-popover placement="bottom-start"
+                                                     data-ng-if="!ctrl.exchangeServiceInfrastructure.isProvider()">
+                                            <button class="btn btn-xs" type="button"
+                                                    data-ng-class="{'btn-success': ctrl.exchange.serverDiagnostic.isAValid, 'btn-warning': !ctrl.exchange.serverDiagnostic.isAValid}"
+                                                    oui-popover-trigger>
+                                                {{ "exchange_dashboard_diag_a_label" | translate }}
+                                            </button>
+                                            <oui-popover-content>
+                                                <p data-translate="exchange_dashboard_diag_a_tooltip_title"></p>
+                                                <p data-ng-bind="ctrl.exchange.serverDiagnostic.aTooltip"></p>
+                                            </oui-popover-content>
+                                        </oui-popover>
+                                        <oui-popover placement="bottom-start"
+                                                     data-ng-if="ctrl.exchangeServiceInfrastructure.isDedicated() || ctrl.exchangeServiceInfrastructure.isDedicatedCluster()">
+                                            <button class="btn btn-xs" type="button"
+                                                    data-ng-class="{'btn-success': ctrl.exchange.serverDiagnostic.isAaaaValid, 'btn-warning': !ctrl.exchange.serverDiagnostic.isAaaaValid}"
+                                                    oui-popover-trigger>
+                                                {{ "exchange_dashboard_diag_aaaa_label" | translate }}
+                                            </button>
+                                            <oui-popover-content>
+                                                <p data-translate="exchange_dashboard_diag_aaaa_tooltip_title"></p>
+                                                <p data-ng-bind="ctrl.exchange.serverDiagnostic.aaaaTooltip"></p>
+                                            </oui-popover-content>
+                                        </oui-popover>
+                                        <oui-popover placement="bottom"
+                                                     data-ng-if="ctrl.exchangeServiceInfrastructure.isDedicated() || ctrl.exchangeServiceInfrastructure.isDedicatedCluster()">
+                                            <button class="btn btn-xs" type="button"
+                                                    data-ng-class="{'btn-success': ctrl.exchange.serverDiagnostic.isPtrValid, 'btn-warning': !ctrl.exchange.serverDiagnostic.isPtrValid}"
+                                                    oui-popover-trigger>
+                                                {{ "exchange_dashboard_diag_ptr_label" | translate }}
+                                            </button>
+                                            <oui-popover-content>
+                                                <p data-translate="exchange_dashboard_diag_ptr_tooltip_title"></p>
+                                                <p data-ng-bind="ctrl.exchange.serverDiagnostic.ptrTooltip"></p>
+                                            </oui-popover-content>
+                                        </oui-popover>
+                                        <oui-popover placement="bottom"
+                                                     data-ng-if="ctrl.exchangeServiceInfrastructure.isDedicated() || ctrl.exchangeServiceInfrastructure.isDedicatedCluster()">
+                                            <button class="btn btn-xs" type="button"
+                                                    data-ng-class="{'btn-success': ctrl.exchange.serverDiagnostic.isPtrV6Valid, 'btn-warning': !ctrl.exchange.serverDiagnostic.isPtrV6Valid}"
+                                                    oui-popover-trigger>
+                                                {{ "exchange_dashboard_diag_ptrv6_label" | translate }}
+                                            </button>
+                                            <oui-popover-content>
+                                                <p data-translate="exchange_dashboard_diag_ptrv6_tooltip_title"></p>
+                                                <p data-ng-bind="ctrl.exchange.serverDiagnostic.ptrv6Tooltip"></p>
+                                            </oui-popover-content>
+                                        </oui-popover>
                                     </div>
                                 </li>
                                 <li class="oui-tile__item"
