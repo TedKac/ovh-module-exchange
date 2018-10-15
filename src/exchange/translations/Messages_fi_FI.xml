@@ -489,14 +489,13 @@ Valitse: <br /> Tyyppi: <span class="bold">A</span> <br /> Aliverkkotunnus: <spa
    <translation id="exchange_account_add_password_hint_complex_1_3_3" qtlid="486178">numeroita välillä 0 ja 9,</translation>
    <translation id="exchange_account_add_password_hint_complex_1_3_4" qtlid="486191">erikoismerkkejä.</translation>
    <translation id="exchange_account_add_passwordConfirmation_label" qtlid="9983">Vahvista</translation>
-   <translation id="exchange_account_add_order_button" qtlid="43558">Tilaa</translation>
+   <translation id="exchange_account_add_confirm_button" qtlid="37923">Lisää</translation>
    <translation id="exchange_account_add_field_error_required" qtlid="472294">Ole hyvä ja täytä tämä kenttä.</translation>
    <translation id="exchange_account_add_field_error_doesntRespectComplexityRules" qtlid="486204">Tämä kenttä ei noudata monimutkaisuussääntöjä.</translation>
    <translation id="exchange_account_add_field_error_passwordConfirmation" qtlid="139637">Salasanat ovat erilaiset</translation>
    <translation id="exchange_account_add_field_error_pattern" qtlid="472385">Syötä hyväksytty formaatti.</translation>
    <translation id="exchange_account_add_submit_success" qtlid="486217">Tilin {0} luominen onnistui. Voit käyttää sitä muutaman minuutin kuluttua.</translation>
    <translation id="exchange_ACTION_add_account_legal_warning" qtlid="209099">Hyväksyn, että OVH laittaa palvelun pystyyn välittömästi hyväksyttyään tilaukseni, ja täten yksiselitteisesti luovun oikeudestani perumiseen Kuluttajansuojalain 6:16. §:n mukaisesti, Asiakkaalla ei ole oikeutta peruuttaa Palvelun tilausta tai uusintaa.</translation>
-   <translation id="exchange_account_add_confirm_button" qtlid="37923">Lisää</translation>
    <translation id="exchange_ACTION_add_account_title" qtlid="143225">Lisää Exchange-tili</translation>
    <translation id="exchange_ACTION_add_account_step1_email_label" qtlid="137244">Sähköpostitili</translation>
    <translation id="exchange_ACTION_add_account_button" qtlid="21487">Lisää tili</translation>
@@ -1659,7 +1658,7 @@ Valitse: <br /> Tyyppi: <span class="bold">A</span> <br /> Aliverkkotunnus: <spa
    <translation id="exchange_wizardHostedCreation_configureDNSZone_authoritative_yes" qtlid="34776">Kyllä</translation>
    <translation id="exchange_wizardHostedCreation_configureDNSZone_authoritative_no" qtlid="34788">Ei</translation>
    <translation id="exchange_wizardHostedCreation_configureDNSZone_emailAdresses" qtlid="450376">Lisätyt sähköpostitilit</translation>
-   <translation id="exchange_wizardHostedCreation_configureDNSZone_emailAdresses_non" qtlid="30646">Ei ole</translation>
+   <translation id="exchange_wizardHostedCreation_configureDNSZone_emailAdresses_non" qtlid="30646">Ei mitään</translation>
    <translation id="exchange_wizardHostedCreation_configureDNSZone_auto_header" qtlid="450389">DNS-alueesi konfigurointi tapahtuu <strong>automaattisessa</strong> tilassa.</translation>
    <translation id="exchange_wizardHostedCreation_configureDNSZone_auto_explanation1" qtlid="450402">Hosted Exchange -palvelusi on nyt konfiguroitu verkkotunnukselle <strong>{0}</strong> . Kun MX-vianhaku on siirtynyt vihreään väriin, alkaa sähköpostiesi vastaanottaminen. Palvelun aktivoimisessa voi kulua 4 - 24 tuntia ennen kuin palvelu on täysin toiminnassa. Sähköpostiviestisi löydät klikkaamalla tätä linkkiä</translation>
    <translation id="exchange_wizardHostedCreation_configureDNSZone_auto_explanation2" qtlid="450415">tai kuvatettasi <strong>Yleiset tiedot</strong> osiossa <strong>Yhteys → Webmail</strong>.</translation>
@@ -1684,4 +1683,5 @@ Valitse: <br /> Tyyppi: <span class="bold">A</span> <br /> Aliverkkotunnus: <spa
    <translation id="exchange_wizardHostedCreation_lastDialog_closeButton" qtlid="450558">Viimeistele</translation>
 
    <translation id="exchange_table_manage_entry" qtlid="404395">: hallinnoi</translation>
+   <translation id="sharepoint_activate_which_service_label" qtlid="297592">Liitettävä Exchange-palvelin</translation>
 </translations>

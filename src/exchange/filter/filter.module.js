@@ -1,1 +1,1 @@
-angular.module("Module.exchange.filters", []);
+angular.module('Module.exchange.filters', []);

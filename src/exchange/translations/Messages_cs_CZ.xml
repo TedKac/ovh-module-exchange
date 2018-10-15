@@ -355,7 +355,7 @@
    <translation id="exchange_update_billing_expiration_date_label" qtlid="30406">Expirace</translation>
    <translation id="exchange_update_billing_current_periode_label" qtlid="190979">Současná hodnota</translation>
    <translation id="exchange_update_billing_periode_label" qtlid="168172">Obnovení</translation>
-   <translation id="exchange_update_billing_header_1Y" qtlid="60390">Rok</translation>
+   <translation id="exchange_update_billing_header_1Y" qtlid="60390">Ročně</translation>
    <translation id="exchange_update_billing_header_1M" qtlid="60378">Měsíc</translation>
    <translation id="exchange_update_billing_header_terminate" qtlid="209177">Žádný</translation>
    <translation id="exchange_update_billing_header_new_periode" qtlid="190992">Nové období</translation>
@@ -487,14 +487,13 @@
    <translation id="exchange_account_add_password_hint_complex_1_3_3" qtlid="486178">číslice od 0 do 9,</translation>
    <translation id="exchange_account_add_password_hint_complex_1_3_4" qtlid="486191">speciální znaky.</translation>
    <translation id="exchange_account_add_passwordConfirmation_label" qtlid="9983">Potvrzení hesla</translation>
-   <translation id="exchange_account_add_order_button" qtlid="43558">Objednat</translation>
+   <translation id="exchange_account_add_confirm_button" qtlid="37923">Přidat</translation>
    <translation id="exchange_account_add_field_error_required" qtlid="472294">Vyplňte prosím toto pole.</translation>
    <translation id="exchange_account_add_field_error_doesntRespectComplexityRules" qtlid="486204">Toto pole neodpovídá kritériím složitosti.</translation>
    <translation id="exchange_account_add_field_error_passwordConfirmation" qtlid="139637">Hesla nejsou shodná</translation>
    <translation id="exchange_account_add_field_error_pattern" qtlid="472385">Zadejte platný formát.</translation>
    <translation id="exchange_account_add_submit_success" qtlid="486217">Účet {0} byl úspěšně vytvořen. K dispozici bude za několik minut.</translation>
    <translation id="exchange_ACTION_add_account_legal_warning" qtlid="209099">Souhlasím, že OVH nastaví službu okamžitě po schválení objednávky a vzdávám se proto práva na zrušení služby podle Článku L.121-21-8.</translation>
-   <translation id="exchange_account_add_confirm_button" qtlid="37923">Přidat</translation>
    <translation id="exchange_ACTION_add_account_title" qtlid="143225">Přidat účet Exchange</translation>
    <translation id="exchange_ACTION_add_account_step1_email_label" qtlid="137244">E-mailový účet</translation>
    <translation id="exchange_ACTION_add_account_button" qtlid="21487">Přidat účet</translation>
@@ -1041,7 +1040,7 @@ Uzavřená: administrátor sám přidává členy do skupiny.</translation>
    <translation id="exchange_ACTION_add_outlook_contracts_label" qtlid="169472">K potvrzení Vašeho požadavku musíte souhlasit s podmínkami užití a poté kliknout na tlačítko "Další".</translation>
    <translation id="exchange_ACTION_add_outlook_contracts__checkbox" qtlid="170070">Potvrzuji, že jsem se seznámil s následujícím:</translation>
    <translation id="exchange_ACTION_add_outlook_intro_step2_label" qtlid="156888">Shrnutí objednávky licence Outlook {0}</translation>
-   <translation id="exchange_ACTION_add_outlook_duration_type_01" qtlid="70241">1 měs.</translation>
+   <translation id="exchange_ACTION_add_outlook_duration_type_01" qtlid="70241">1 měsíc</translation>
    <translation id="exchange_ACTION_add_outlook_duration_type_12" qtlid="70277">1 rok</translation>
    <translation id="exchange_ACTION_add_outlook_step2_error_message" qtlid="156901">Při objednávání licence Outlook došlo k chybě.</translation>
    <translation id="exchange_ACTION_add_outlook_order_step2_generation_bc" qtlid="169511">Vytváření objednávky...</translation>
@@ -1697,4 +1696,5 @@ Uzavřená: administrátor sám přidává členy do skupiny.</translation>
    <translation id="exchange_wizardHostedCreation_lastDialog_closeButton" qtlid="450558">Dokončit</translation>
 
    <translation id="exchange_table_manage_entry" qtlid="404395">: spravovat</translation>
+   <translation id="sharepoint_activate_which_service_label" qtlid="297592">Exchange server pro připojení</translation>
 </translations>

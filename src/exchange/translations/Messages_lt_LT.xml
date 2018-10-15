@@ -6,9 +6,9 @@
    <translation id="exchange_reset_search_value" qtlid="433719">Inicijuoti paiešką</translation>
    <translation id="exchange_search_value" qtlid="55493">Paieška</translation>
    <translation id="exchange_status_task_planned_or_executing" qtlid="485632">Užduotis suplanuota arba jau yra vykdoma</translation>
-   <translation id="exchange_common_new_tab" qtlid="485645">Atverti nuoroda naujame skirtuke</translation>
+   <translation id="exchange_common_new_tab" qtlid="485645">Atverti nuorodą naujame skirtuke</translation>
    <translation id="exchange_contractTypes_prepaid" qtlid="485658">Išankstinis apmokėjimas</translation>
-   <translation id="exchange_contractTypes_payAsYouGo" qtlid="485671">Paiement à la consommation</translation>
+   <translation id="exchange_contractTypes_payAsYouGo" qtlid="485671">Apmokėjimas po naudojimo</translation>
    <translation id="exchange_accountCreationMethods_adding" qtlid="47781">Priskirti</translation>
    <translation id="exchange_accountCreationMethods_ordering" qtlid="8302">Užsakymas</translation>
 
@@ -115,7 +115,7 @@
    <translation id="exchange_tab_INFORMATIONS_go_far" qtlid="276337">Toliau</translation>
    <translation id="exchange_tab_INFORMATIONS_infrastructure" qtlid="125552">Infrastruktūra</translation>
    <translation id="exchange_tab_INFORMATIONS_version" qtlid="276350">Exchange versija</translation>
-   <translation id="exchange_tab_INFORMATIONS_webmail" qtlid="485697">Webmail :</translation>
+   <translation id="exchange_tab_INFORMATIONS_webmail" qtlid="485697">Webmail:</translation>
    <translation id="exchange_tab_INFORMATIONS_messaging" qtlid="276363">El. pranešimų siuntumo klientas</translation>
    <translation id="exchange_tab_INFORMATIONS_order_office" qtlid="276376">Užsakyti Office 365</translation>
    <translation id="exchange_tab_INFORMATIONS_order_sharepoint" qtlid="319427">Užsakyti SharePoint</translation>
@@ -150,37 +150,37 @@
    <translation id="exchange_tab_dedicatedCluster_account_type_BASIC" qtlid="485710">E-Mail Pro</translation>
    <translation id="exchange_tab_dedicatedCluster_account_type_STANDARD" qtlid="80430">Exchange</translation>
 
-   <translation id="exchange_tab_accounts_table_outlook_ALREADY_ORDERED" qtlid="485723">Commandé</translation>
+   <translation id="exchange_tab_accounts_table_outlook_ALREADY_ORDERED" qtlid="485723">Užsakyta</translation>
    <translation id="exchange_tab_accounts_table_outlook_ALREADY_ACTIVATED" qtlid="30250">Įjungta</translation>
-   <translation id="exchange_tab_accounts_table_outlook_TO_ORDER" qtlid="485736">À commander</translation>
-   <translation id="exchange_tab_accounts_table_outlook_TO_ACTIVATE" qtlid="485749">À activer</translation>
+   <translation id="exchange_tab_accounts_table_outlook_TO_ORDER" qtlid="485736">Būtina užsakyti</translation>
+   <translation id="exchange_tab_accounts_table_outlook_TO_ACTIVATE" qtlid="485749">Būtina įjungti</translation>
 
    <translation id="exchange_tab_ACCOUNTS_action_add_exchange" qtlid="139169">Užsakyti paskyras</translation>
    <translation id="exchange_tab_ACCOUNTS_action_add_extern" qtlid="136334">Pridėti išorinį kontaktą</translation>
    <translation id="exchange_tab_ACCOUNTS_state_OK" qtlid="424155">Veikia</translation>
    <translation id="exchange_tab_ACCOUNTS_state_CREATING" qtlid="146632">Kuriama</translation>
    <translation id="exchange_tab_ACCOUNTS_state_DELETING" qtlid="146645">Trinama</translation>
-   <translation id="exchange_tab_ACCOUNTS_state_RESETTING" qtlid="485762">Réinitialisation en cours</translation>
-   <translation id="exchange_tab_ACCOUNTS_state_REOPENING" qtlid="485775">Réactivation en cours</translation>
+   <translation id="exchange_tab_ACCOUNTS_state_RESETTING" qtlid="485762">Paleidžiama iš naujo</translation>
+   <translation id="exchange_tab_ACCOUNTS_state_REOPENING" qtlid="485775">Paleidžiama iš naujo</translation>
    <translation id="exchange_tab_ACCOUNTS_state_INTERNAL_MIGRATION" qtlid="186713">Vyksta migravimas</translation>
    <translation id="exchange_tab_ACCOUNTS_state_SUSPENDED" qtlid="136100">Pristabdytas</translation>
    <translation id="exchange_tab_ACCOUNTS_state_SUSPENDING" qtlid="171201">Pristabdoma</translation>
    <translation id="exchange_tab_ACCOUNTS_state_BLOCKED" qtlid="108901">Užblokuotas</translation>
    <translation id="exchange_tab_ACCOUNTS_state_TASK_ON_DOING" qtlid="485632">Užduotis suplanuota arba jau yra vykdoma</translation>
-   <translation id="exchange_tab_ACCOUNTS_state_TASK_ON_ERROR" qtlid="485788">Tâche en erreur</translation>
+   <translation id="exchange_tab_ACCOUNTS_state_TASK_ON_ERROR" qtlid="485788">Klaida vykdant užduotį</translation>
    <translation id="exchange_tab_ACCOUNTS_state_UNKNOWN" qtlid="77142">Nepažįstamas</translation>
    <translation id="exchange_tab_ACCOUNTS_state_TO_CONFIGURE" qtlid="424142">Konfigūruoti</translation>
 
    <translation id="exchange_tab_ACCOUNTS_menu_edit" qtlid="37875">Keisti</translation>
-   <translation id="exchange_tab_ACCOUNTS_menu_alias" qtlid="485801">Gérer les alias</translation>
+   <translation id="exchange_tab_ACCOUNTS_menu_alias" qtlid="485801">Valdyti alias</translation>
    <translation id="exchange_tab_ACCOUNTS_menu_delegations" qtlid="288782">Valdyti delegavimą</translation>
-   <translation id="exchange_tab_ACCOUNTS_menu_exportToPST" qtlid="485814">Exporter au format PST</translation>
-   <translation id="exchange_tab_ACCOUNTS_menu_upgradeTo300Gb" qtlid="485827">Augmenter la capacité à 300 {0}</translation>
+   <translation id="exchange_tab_ACCOUNTS_menu_exportToPST" qtlid="485814">Eksportuoti PST formatu</translation>
+   <translation id="exchange_tab_ACCOUNTS_menu_upgradeTo300Gb" qtlid="485827">Padidinti talpą iki 300 {0}</translation>
    <translation id="exchange_tab_ACCOUNTS_menu_contactSupportForSpam" qtlid="61824">Atblokuoti</translation>
    <translation id="exchange_tab_ACCOUNTS_menu_outlook_activate" qtlid="397416">Aktyvuoti Outlook licenciją</translation>
-   <translation id="exchange_tab_ACCOUNTS_menu_outlook_order" qtlid="485840">Commander une licence Outlook</translation>
-   <translation id="exchange_tab_ACCOUNTS_menu_outlook_access" qtlid="485853">Utiliser la licence Outlook</translation>
-   <translation id="exchange_tab_ACCOUNTS_menu_outlook_deactivate" qtlid="485866">Désactiver la licence Outlook</translation>
+   <translation id="exchange_tab_ACCOUNTS_menu_outlook_order" qtlid="485840">Užsakyti Outlook licenciją</translation>
+   <translation id="exchange_tab_ACCOUNTS_menu_outlook_access" qtlid="485853">Naudoti Outlook licenciją</translation>
+   <translation id="exchange_tab_ACCOUNTS_menu_outlook_deactivate" qtlid="485866">Išjungti Outlook licenciją</translation>
    <translation id="exchange_tab_ACCOUNTS_menu_outlook_delete" qtlid="397377">Ištrinti Outlook licenciją</translation>
    <translation id="exchange_tab_ACCOUNTS_menu_reset" qtlid="169654">Inicijuoti iš naujo</translation>
    <translation id="exchange_tab_ACCOUNTS_menu_delete" qtlid="2414">Trinti</translation>
@@ -210,7 +210,7 @@
 
 <!-- ########################################## -->
 <!-- ALIAS -->
-   <translation id="exchange_tab_ALIAS_back_button" qtlid="485879">Gestion des alias pour {0}</translation>
+   <translation id="exchange_tab_ALIAS_back_button" qtlid="485879">Alias valdymas {0}</translation>
    <translation id="exchange_tab_ALIAS_header" qtlid="9466">Alias</translation>
    <translation id="exchange_tab_ALIAS_delete_tooltip" qtlid="178848">Ištrinti šį alias</translation>
    <translation id="exchange_tab_ALIAS_GROUP_intro" qtlid="434525">Alias, sukurtų <strong>{0}</strong> grupei, sąrašas</translation>
@@ -241,7 +241,7 @@
    <translation id="exchange_tab_ALIAS_add_alias_error_message" qtlid="143681">Klaida kuriant alias.</translation>
    <translation id="exchange_tab_ALIAS_add_no_domains" qtlid="170746">Dar nepriskyrėte domeno arba jis nepatvirtintas. <br/>Turite priskirti domeną ir palaukti, kol jis bus patvirtintas, kad galėtumėte jį naudoti kaip Exchange alias.</translation>
    <translation id="exchange_tab_ALIAS_domain_loading_failure" qtlid="144045">Klaida įkeliant domenus.</translation>
-   <translation id="exchange_tab_ALIAS_add_alias_limit_tooltip" qtlid="485892">Vous avez atteint la limite de {0} alias par compte Exchange.</translation>
+   <translation id="exchange_tab_ALIAS_add_alias_limit_tooltip" qtlid="485892">Jūs pasiekėte {0} alias limitą Exchange paskyrai.</translation>
 
 <!-- ########################################## -->
 <!-- TASKS -->
@@ -355,7 +355,7 @@
    <translation id="exchange_update_billing_expiration_date_label" qtlid="30406">Galioja iki</translation>
    <translation id="exchange_update_billing_current_periode_label" qtlid="190979">Esama vertė</translation>
    <translation id="exchange_update_billing_periode_label" qtlid="168172">Atnaujinimas</translation>
-   <translation id="exchange_update_billing_header_1Y" qtlid="60390">Metų</translation>
+   <translation id="exchange_update_billing_header_1Y" qtlid="60390">Metams</translation>
    <translation id="exchange_update_billing_header_1M" qtlid="60378">Mėnesio</translation>
    <translation id="exchange_update_billing_header_terminate" qtlid="209177">None</translation>
    <translation id="exchange_update_billing_header_new_periode" qtlid="190992">Naujas laikotarpis</translation>
@@ -457,43 +457,42 @@
    <translation id="exchange_ACTION_order_accounts_step3_explication2" qtlid="144175">Atsidarys nauja kortelė ir būsite automatiškai nukreipti į OVH apmokėjimų puslapį.</translation>
 
 <!-- ACCOUNT - ADD -->
-   <translation id="exchange_account_add_back_button" qtlid="485905">Ajout d'un compte</translation>
-   <translation id="exchange_account_add_header" qtlid="485918">Vous pouvez commander un compte E-mail Pro ou Exchange à ajouter à votre offre Dedicated Exchange. Il sera ajouté à votre facture mensuelle.</translation>
+   <translation id="exchange_account_add_back_button" qtlid="485905">Paskyros pridėjimas</translation>
+   <translation id="exchange_account_add_header" qtlid="485918">Jūs galite užsakyti E-mail Pro ar Exchange paskyrą ir ją pridėti prie Dedicated Exchange. Paskyra bus įtraukta į jūsų mėnesinį abonementą.</translation>
    <translation id="exchange_account_add_accountType_label" qtlid="48938">Paskyros tipas</translation>
-<translation id="exchange_account_add_accountType_tooltip" qtlid="485931">E-mail pro&#160;: profitez de 10 Go de stockage, des protocoles POP, IMAP et SMTP. Exchange&#160;: profitez de 50 Go de stockage, des protocoles MAPI et ActiveSync.
+<translation id="exchange_account_add_accountType_tooltip" qtlid="485931">E-mail pro: pasinaudokite 10 GB saugykla, POP, IMAP ir SMTP protokolais. Exchange: pasinaudokite 50 GB saugykla, MAPI ir ActiveSync protokolais.
 </translation>
    <translation id="exchange_account_add_emailAddress_label" qtlid="11315">El. pašto adresas</translation>
-<translation id="exchange_account_add_emailAddress_hint" qtlid="485944">La partie locale de votre adresse e-mail (le texte situé avant le «&#160;@&#160;») doit respecter ces indications&#160;:<ul>
-<li qtlid="485957">elle doit débuter et se terminer par une lettre ou un chiffre&#160;;</li>
-<li qtlid="485970">les caractères spéciaux&#160;autorisés sont «&#160;.&#160;», «&#160;+&#160;», «&#160;- » et «&#160;_&#160;» ;</li>
-<li qtlid="485983">il est impossible de mettre côte à côte des caractères spéciaux.</li>
+<translation id="exchange_account_add_emailAddress_hint" qtlid="485944">Jūsų el. pašto adreso lokali dalis (tekstas iki&#160;@) turi atitikti šiuos reikalavimus:<ul>
+<li qtlid="485957">pradžioje ir pabaigoje turi būti raidė ar skaičius;</li>
+<li qtlid="485970">leidžiami specialūs smiboliai:&#160;.&#160;,&#160;+&#160;, - ir&#160;_&#160;;</li>
+<li qtlid="485983">neleidžiama naudoti specialius simbolius vieną šalia kito.</li>
 </ul></translation>
-   <translation id="exchange_account_add_emailAddress_error_emailAddressIsAlreadyTaken" qtlid="485996">Cette adresse e-mail existe déjà.</translation>
-   <translation id="exchange_account_add_samAccountName_label" qtlid="486009">Nom de compte Exchange 2010 (optionnel)</translation>
-   <translation id="exchange_account_add_firstName_label" qtlid="486022">Prénom (optionnel)</translation>
-   <translation id="exchange_account_add_lastName_label" qtlid="486035">Nom (optionnel)</translation>
-   <translation id="exchange_account_add_displayName_label" qtlid="486048">Nom à afficher (optionnel)</translation>
+   <translation id="exchange_account_add_emailAddress_error_emailAddressIsAlreadyTaken" qtlid="485996">Šis el. pašto adresas jau egzistuoja.</translation>
+   <translation id="exchange_account_add_samAccountName_label" qtlid="486009">Exchange 2010 paskyros pavadinimas (pasirinktinai)</translation>
+   <translation id="exchange_account_add_firstName_label" qtlid="486022">Vardas (pasirinktinai)</translation>
+   <translation id="exchange_account_add_lastName_label" qtlid="486035">Pavardė (pasirinktinai)</translation>
+   <translation id="exchange_account_add_displayName_label" qtlid="486048">Rodyti pavadinimą (pasirinktinai)</translation>
    <translation id="exchange_account_add_password_label" qtlid="2270">Slaptažodis</translation>
-   <translation id="exchange_account_add_password_button_show" qtlid="486061">Montrer le mot de passe</translation>
-   <translation id="exchange_account_add_password_button_hide" qtlid="486074">Cacher le mot de passe</translation>
-   <translation id="exchange_account_add_password_hint_simple" qtlid="486087">Ce champ doit avoir une longueur d'au moins {0} caractères.</translation>
-   <translation id="exchange_account_add_password_hint_complex_1" qtlid="486100">Pour des raisons de sécurité, ce champ doit respecter ces critères :</translation>
-   <translation id="exchange_account_add_password_hint_complex_1_1" qtlid="486113">ne pas contenir le nom à afficher ou le nom de compte Exchange 2010 (sans respect de la casse) ;</translation>
-   <translation id="exchange_account_add_password_hint_complex_1_2" qtlid="486126">doit comporter au moins entre {0} caractères ;</translation>
-   <translation id="exchange_account_add_password_hint_complex_1_3" qtlid="486139">doit comporter les éléments de trois des quatre catégories suivantes :</translation>
-   <translation id="exchange_account_add_password_hint_complex_1_3_1" qtlid="486152">des lettres minuscules,</translation>
-   <translation id="exchange_account_add_password_hint_complex_1_3_2" qtlid="486165">des lettres majuscules,</translation>
-   <translation id="exchange_account_add_password_hint_complex_1_3_3" qtlid="486178">des chiffres entre 0 et 9,</translation>
-   <translation id="exchange_account_add_password_hint_complex_1_3_4" qtlid="486191">des caractères spéciaux.</translation>
+   <translation id="exchange_account_add_password_button_show" qtlid="486061">Rodyti slaptažodį</translation>
+   <translation id="exchange_account_add_password_button_hide" qtlid="486074">Slėpti slaptažodį</translation>
+   <translation id="exchange_account_add_password_hint_simple" qtlid="486087">Šio lauko ilgis turi būti mažiausiai {0} simbolių.</translation>
+   <translation id="exchange_account_add_password_hint_complex_1" qtlid="486100">Dėl saugumo priežasčių, šis laukas turi atitikti šiuos kriterijus:</translation>
+   <translation id="exchange_account_add_password_hint_complex_1_1" qtlid="486113">neturėti rodomo pavadinimo ar Exchange 2010 paskyros pavadinimo (nepriklausomai nuo simbolių dydžio);</translation>
+   <translation id="exchange_account_add_password_hint_complex_1_2" qtlid="486126">turi būti mažiausiai {0} simbolių;</translation>
+   <translation id="exchange_account_add_password_hint_complex_1_3" qtlid="486139">turi turėti šių 3-4 kategorijų elementus:</translation>
+   <translation id="exchange_account_add_password_hint_complex_1_3_1" qtlid="486152">mažosios raidės,</translation>
+   <translation id="exchange_account_add_password_hint_complex_1_3_2" qtlid="486165">didžiosios raidės,</translation>
+   <translation id="exchange_account_add_password_hint_complex_1_3_3" qtlid="486178">skaičiai nuo 0 iki 9,</translation>
+   <translation id="exchange_account_add_password_hint_complex_1_3_4" qtlid="486191">specialūs simboliai.</translation>
    <translation id="exchange_account_add_passwordConfirmation_label" qtlid="9983">Patvirtinimas</translation>
-   <translation id="exchange_account_add_order_button" qtlid="43558">Užsakyti</translation>
+   <translation id="exchange_account_add_confirm_button" qtlid="37923">Pridėti</translation>
    <translation id="exchange_account_add_field_error_required" qtlid="472294">Prašome užpildyti šį lauką</translation>
-   <translation id="exchange_account_add_field_error_doesntRespectComplexityRules" qtlid="486204">Ce champ ne respecte pas les règles de complexité.</translation>
+   <translation id="exchange_account_add_field_error_doesntRespectComplexityRules" qtlid="486204">Šis laukas neatitinka sudėtingumo reikalavimų.</translation>
    <translation id="exchange_account_add_field_error_passwordConfirmation" qtlid="139637">Slaptažodžiai nesutampa</translation>
    <translation id="exchange_account_add_field_error_pattern" qtlid="472385">Prašome naudoti priimtiną formatą</translation>
-   <translation id="exchange_account_add_submit_success" qtlid="486217">La création du compte {0} a été effectuée. Vous pourrez l’utiliser dans quelques minutes.</translation>
+   <translation id="exchange_account_add_submit_success" qtlid="486217">Paskyra {0} sukurta. Jūs galėsite pradėti ja naudotis po kelių minučių.</translation>
    <translation id="exchange_ACTION_add_account_legal_warning" qtlid="209099">Sutinku, kad OVH pradės teikti paslaugą nedelsiant nuo mano užsakymo patvirtinimo momento, todėl negalėsiu pasinaudoti paslaugos atsisakymo teise.</translation>
-   <translation id="exchange_account_add_confirm_button" qtlid="37923">Pridėti</translation>
    <translation id="exchange_ACTION_add_account_title" qtlid="143225">Įtraukti Exchange paskyrą</translation>
    <translation id="exchange_ACTION_add_account_step1_email_label" qtlid="137244">El. pašto paskyra</translation>
    <translation id="exchange_ACTION_add_account_button" qtlid="21487">Sukurti abonementą</translation>
@@ -511,14 +510,14 @@
    <translation id="exchange_ACTION_add_account_outlook_false" qtlid="136308">Be</translation>
    <translation id="exchange_ACTION_add_no_domains" qtlid="170798">Dar nepridėjote domeno arba jis nėra patvirtintas. <br/>Pirmiausiai reikia pridėti domeną ir palaukti, kol jis bus patvirtintas, tik po to galima kurti Exchange paskyras.</translation>
    <translation id="exchange_ACTION_add_account_option_fail" qtlid="144045">Klaida įkeliant domenus.</translation>
-   <translation id="exchange_ACTION_add_account_fetchingAccountCreationOptions_error" qtlid="486230">Une erreur est survenue lors de la récupération des options de création d'un compte Exchange.</translation>
+   <translation id="exchange_ACTION_add_account_fetchingAccountCreationOptions_error" qtlid="486230">Įvyko klaida atkuriant Exchange paskyros kūrimo parinktis.</translation>
    <translation id="exchange_ACTION_add_account_error_message" qtlid="136828">Įvyko klaida kuriant Exchange paskyrą.</translation>
    <translation id="exchange_ACTION_update_account_step1_email_label" qtlid="137244">El. pašto paskyra</translation>
    <translation id="exchange_ACTION_update_account_step1_type_label" qtlid="191057">Paskyros tipas</translation>
    <translation id="exchange_ACTION_update_account_step1_type_STANDARD" qtlid="48998">Standard</translation>
    <translation id="exchange_ACTION_update_account_step1_type_BASIC" qtlid="48986">Basic</translation>
    <translation id="exchange_ACTION_update_account_step1_type_ENTERPRISE" qtlid="49022">Entreprise</translation>
-   <translation id="exchange_ACTION_update_account_step1_type_cant_change" qtlid="486243">Le type de compte ne peut être changé tant qu'une licence Outlook est associée à ce compte.</translation>
+   <translation id="exchange_ACTION_update_account_step1_type_cant_change" qtlid="486243">Paskyros tipas negali būti pakeistas, kol Outlook licencija susieta su šia paskyra.</translation>
    <translation id="exchange_ACTION_update_account_step1_first_name_label" qtlid="23323">Vardas</translation>
    <translation id="exchange_ACTION_update_account_step1_last_name_label" qtlid="3818">Pavadinimas</translation>
    <translation id="exchange_ACTION_update_account_step1_display_name_label" qtlid="23515">Rodomas vardas</translation>
@@ -538,7 +537,7 @@
    <translation id="exchange_ACTION_update_account_step1_security_label" qtlid="136750">Saugumo nustatymai </translation>
    <translation id="exchange_ACTION_update_account_step1_GAL_label" qtlid="191980">Slėpti adresą adresų knygelėje</translation>
    <translation id="exchange_ACTION_update_account_step1_exchange_guid_label" qtlid="174633">Exchange GUID</translation>
-   <translation id="exchange_ACTION_update_account_step1_exchange_SAMA_label" qtlid="486256">Nom de compte Exchange 2010</translation>
+   <translation id="exchange_ACTION_update_account_step1_exchange_SAMA_label" qtlid="486256">Exchange 2010 paskyros pavadinimas</translation>
    <translation id="exchange_ACTION_update_account_step1_mandatory_fields" qtlid="137634">Privalomi laukai </translation>
    <translation id="exchange_ACTION_update_account_step2_confirmation_intro" qtlid="136841">Jūsų paskyra:</translation>
    <translation id="exchange_ACTION_update_account_step2_email_label" qtlid="137244">El. pašto paskyra</translation>
@@ -1042,20 +1041,20 @@
    <translation id="exchange_ACTION_activate_outlook_title" qtlid="397416">Aktyvuoti Outlook licenciją</translation>
    <translation id="exchange_ACTION_activate_outlook_intro_label" qtlid="397429">Ar norite įjungti Outlook licenciją Exchange paskyrai?</translation>
 
-   <translation id="exchange_accounts_fetchOfficeAttachError_error" qtlid="486269">Une erreur est survenue lors de la récupération des préférences liées à Office Attach</translation>
-   <translation id="exchange_accounts_fetchAccountCreationOptions_error" qtlid="486282">Une erreur est survenue lors de la récupération des options de créations de comptes</translation>
-   <translation id="exchange_accounts_fetchAccounts_error" qtlid="486295">Une erreur est survenue lors de la récupération des comptes</translation>
+   <translation id="exchange_accounts_fetchOfficeAttachError_error" qtlid="486269">Įvyko klaida atkuriant nustatymus, susietus su Office Attach</translation>
+   <translation id="exchange_accounts_fetchAccountCreationOptions_error" qtlid="486282">Įvyko klaida atkuriant paskyrų kūrimo parinktis</translation>
+   <translation id="exchange_accounts_fetchAccounts_error" qtlid="486295">Įvyko klaida atkuriant parinktis</translation>
 
-   <translation id="exchange_accounts_outlook_deactivate_title" qtlid="485866">Désactiver la licence Outlook</translation>
-   <translation id="exchange_accounts_outlook_deactivate_intro" qtlid="486308">Souhaitez-vous désactiver votre licence Outlook ?</translation>
-   <translation id="exchange_accounts_outlook_deactivate_success" qtlid="486321">La désaction du compte Outlook a été effectuée avec succès.</translation>
-   <translation id="exchange_accounts_outlook_deactivate_error" qtlid="486334">La désaction du compte Outlook a rencontré une erreur.</translation>
+   <translation id="exchange_accounts_outlook_deactivate_title" qtlid="485866">Išjungti Outlook licenciją</translation>
+   <translation id="exchange_accounts_outlook_deactivate_intro" qtlid="486308">Ar norite išjungti savo Outlook licenciją?</translation>
+   <translation id="exchange_accounts_outlook_deactivate_success" qtlid="486321">Outlook paskyra sėkmingai išjungta.</translation>
+   <translation id="exchange_accounts_outlook_deactivate_error" qtlid="486334">Išjungiant Outlook paskyrą įvyko klaida.</translation>
 
    <translation id="exchange_accounts_outlook_delete_title" qtlid="397377">Ištrinti Outlook licenciją</translation>
    <translation id="exchange_accounts_outlook_delete_intro" qtlid="397442">Ar norite pašalinti savo Outlook licenciją?</translation>
    <translation id="exchange_accounts_outlook_delete_note" qtlid="397455">SVARBU: Outlook licencijos pašalinimas įsigalios galiojimo pabaigos dieną. </translation>
-   <translation id="exchange_accounts_outlook_delete_success" qtlid="486347">La suppression du compte Outlook a été effectuée avec succès. Elle sera effective à sa date d'expiration.</translation>
-   <translation id="exchange_accounts_outlook_delete_error" qtlid="486360">La suppression du compte Outlook a rencontré une erreur.</translation>
+   <translation id="exchange_accounts_outlook_delete_success" qtlid="486347">Outlook paskyra sėkmingai pašalinta. Pašalinimas įsigalios paskyros galiojimo pabaigos dieną.</translation>
+   <translation id="exchange_accounts_outlook_delete_error" qtlid="486360">Šalinant Outlook paskyrą įvyko klaida.</translation>
 
    <translation id="exchange_ACTION_display_outlook_title" qtlid="136724">Outlook licencija </translation>
    <translation id="exchange_ACTION_display_outlook_step1_wait_label" qtlid="170941">Šiuo metu Outlook parsisiuntimo nuoroda aktyvi. Prieš generuodami naują nuorodą, palaukite, kol senoji nustos galioti (daugiausiai 5 minutes).</translation>
@@ -1391,7 +1390,7 @@
    <translation id="exchange_action_license_history_units" qtlid="113658">Licencijos</translation>
    <translation id="exchange_action_license_history_date" qtlid="66308">Data:</translation>
    <translation id="exchange_action_license_history_type_outlook" qtlid="193111">Outlook licencijos </translation>
-   <translation id="exchange_action_license_history_label" qtlid="486373">Licences {0}</translation>
+   <translation id="exchange_action_license_history_label" qtlid="486373">Licencijos {0}</translation>
    <translation id="exchange_action_license_history_period_LASTMONTH" qtlid="169680">Paskutinis mėnuo</translation>
    <translation id="exchange_action_license_history_period_LAST3MONTHS" qtlid="193163">Per 3 pastaruosius mėnesius </translation>
    <translation id="exchange_action_license_history_period_LASTWEEK" qtlid="169693">Paskutinės 7 dienos</translation>
@@ -1680,4 +1679,5 @@
    <translation id="exchange_wizardHostedCreation_lastDialog_closeButton" qtlid="450558">Baigti</translation>
 
    <translation id="exchange_table_manage_entry" qtlid="404395">: valdyti</translation>
+   <translation id="sharepoint_activate_which_service_label" qtlid="297592">Susietinas Exchange serveris</translation>
 </translations>

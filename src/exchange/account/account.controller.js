@@ -1,44 +1,49 @@
-angular
-    .module("Module.exchange.controllers")
-    .controller("exchangeAccountCtlr", class ExchangeAccountCtlr {
-        constructor ($scope, exchangeAccount, messaging) {
-            this.$scope = $scope;
+angular.module('Module.exchange.controllers').controller(
+  'exchangeAccountCtlr',
+  class ExchangeAccountCtlr {
+    constructor($scope, exchangeAccount, messaging) {
+      this.$scope = $scope;
 
-            this.exchangeAccount = exchangeAccount;
-            this.messaging = messaging;
+      this.exchangeAccount = exchangeAccount;
+      this.messaging = messaging;
 
-            this.STATES = {
-                HIDE: {
-                    name: "home",
-                    isDefault: true
-                },
-                ALIAS: {
-                    name: "alias"
-                },
-                ADD: {
-                    name: "add"
-                }
-            };
-        }
+      this.STATES = {
+        HIDE: {
+          name: 'home',
+          isDefault: true,
+        },
+        ALIAS: {
+          name: 'alias',
+        },
+        ADD: {
+          name: 'add',
+        },
+      };
+    }
 
-        $onInit () {
-            this.currentStateName = "home";
+    $onInit() {
+      this.currentStateName = 'home';
 
-            this.$scope.$on(this.exchangeAccount.EVENTS.CHANGE_STATE, (events, args) => this.changeState(args));
-        }
+      this.$scope.$on(
+        this.exchangeAccount.EVENTS.CHANGE_STATE,
+        (events, args) => this.changeState(args),
+      );
+    }
 
-        changeState ({ stateName, args }) {
-            const formattedStateName = `${stateName}`.toUpperCase();
-            const matchingState = _(this.STATES).get(formattedStateName, getDefaultState.call(this));
+    changeState({ stateName, args }) {
+      function getDefaultState() {
+        return _(this.STATES)
+          .chain()
+          .keys()
+          .find(key => this.STATES[key].isDefault)
+          .value();
+      }
 
-            this.currentStateName = matchingState.name;
-            this.stateArgs = args;
+      const formattedStateName = `${stateName}`.toUpperCase();
+      const matchingState = _(this.STATES).get(formattedStateName, getDefaultState.call(this));
 
-            function getDefaultState () {
-                return _(this.STATES).chain()
-                    .keys()
-                    .find((key) => this.STATES[key].isDefault)
-                    .value();
-            }
-        }
-    });
+      this.currentStateName = matchingState.name;
+      this.stateArgs = args;
+    }
+  },
+);

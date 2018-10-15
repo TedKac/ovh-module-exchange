@@ -1,102 +1,127 @@
-angular
-    .module("Module.exchange.controllers")
-    .controller("ExchangeTabDomainsCtrl", class ExchangeTabDomainsCtrl {
-        constructor ($scope, $http, Exchange, ExchangeDomains, $translate, exchangeStates, exchangeServiceInfrastructure) {
-            this.services = {
-                $scope,
-                $http,
-                Exchange,
-                ExchangeDomains,
-                $translate,
-                exchangeStates,
-                exchangeServiceInfrastructure
-            };
+angular.module('Module.exchange.controllers').controller(
+  'ExchangeTabDomainsCtrl',
+  class ExchangeTabDomainsCtrl {
+    constructor(
+      $scope,
+      $http,
+      Exchange,
+      ExchangeDomains,
+      $translate,
+      exchangeStates,
+      exchangeServiceInfrastructure,
+    ) {
+      this.services = {
+        $scope,
+        $http,
+        Exchange,
+        ExchangeDomains,
+        $translate,
+        exchangeStates,
+        exchangeServiceInfrastructure,
+      };
 
-            this.$routerParams = Exchange.getParams();
+      this.$routerParams = Exchange.getParams();
 
-            this.domainTypeAuthoritative = "AUTHORITATIVE";
-            this.domainTypeNonAuthoritative = "NON_AUTHORITATIVE";
+      this.domainTypeAuthoritative = 'AUTHORITATIVE';
+      this.domainTypeNonAuthoritative = 'NON_AUTHORITATIVE';
 
-            this.loading = false;
-            this.paginated = null;
-            this.search = {
-                value: null
-            };
+      this.loading = false;
+      this.paginated = null;
+      this.search = {
+        value: null,
+      };
 
-            this.exchange = Exchange.value;
+      this.exchange = Exchange.value;
 
-            if (exchangeServiceInfrastructure.isProvider()) {
-                this.cnameRedirection = "ex-mail.biz";
-            } else {
-                this.cnameRedirection = "ovh.com";
-            }
+      if (exchangeServiceInfrastructure.isProvider()) {
+        this.cnameRedirection = 'ex-mail.biz';
+      } else {
+        this.cnameRedirection = 'ovh.com';
+      }
 
-            $scope.$on(Exchange.events.domainsChanged, () => $scope.$broadcast("paginationServerSide.reload", "domainsTable"));
+      $scope.$on(Exchange.events.domainsChanged, () => $scope.$broadcast('paginationServerSide.reload', 'domainsTable'));
 
-            $scope.getDomains = (count, offset) => this.getDomains(count, offset);
-            $scope.getPaginated = () => this.paginated;
-            $scope.getLoading = () => this.loading;
-        }
+      $scope.getDomains = (count, offset) => this.getDomains(count, offset);
+      $scope.getPaginated = () => this.paginated;
+      $scope.getLoading = () => this.loading;
+    }
 
-        goSearch () {
-            this.services.$scope.$broadcast("paginationServerSide.loadPage", 1, "domainsTable");
-        }
+    goSearch() {
+      this.services.$scope.$broadcast('paginationServerSide.loadPage', 1, 'domainsTable');
+    }
 
-        emptySearch () {
-            this.search.value = "";
-            this.goSearch();
-        }
+    emptySearch() {
+      this.search.value = '';
+      this.goSearch();
+    }
 
-        getDomains (count, offset) {
-            this.loading = true;
+    getDomains(count, offset) {
+      this.loading = true;
 
-            this.services
-                .ExchangeDomains
-                .gettingDomains(this.$routerParams.organization, this.$routerParams.productId, count, offset, this.search.value)
-                .then((domains) => {
-                    this.paginated = domains;
+      this.services.ExchangeDomains.gettingDomains(
+        this.$routerParams.organization,
+        this.$routerParams.productId,
+        count,
+        offset,
+        this.search.value,
+      )
+        .then((domains) => {
+          this.paginated = domains;
 
-                    _.forEach(this.paginated.domains, (domain) => {
-                        domain.domainTypes = domains.domainTypes;
-                    });
+          _.forEach(this.paginated.domains, (domain) => {
+            _.set(domain, 'domainTypes', domains.domainTypes);
+          });
 
-                    this.setTooltips();
-                })
-                .finally(() => { this.loading = false; });
-        }
+          this.setTooltips();
+        })
+        .finally(() => {
+          this.loading = false;
+        });
+    }
 
-        setTooltips () {
-            if (_.has(this.paginated, "domains") && !_.isEmpty(this.paginated.domains)) {
-                _.forEach(this.paginated.domains, (domain) => {
-                    if (this.exchange != null) {
-                        this.setMxTooltip(domain);
-                        this.setSrvTooltip(domain);
-                    }
-                });
-            }
-        }
+    setTooltips() {
+      if (_.has(this.paginated, 'domains') && !_.isEmpty(this.paginated.domains)) {
+        _.forEach(this.paginated.domains, (domain) => {
+          if (this.exchange != null) {
+            this.setMxTooltip(domain);
+            this.setSrvTooltip(domain);
+          }
+        });
+      }
+    }
 
-        setMxTooltip (domain) {
-            if (domain.mxValid) {
-                domain.mxTooltip = this.services.$translate.instant("exchange_tab_domain_diagnostic_mx_toolbox_ok");
-            } else {
-                domain.mxTooltip = this.services.$translate.instant("exchange_tab_domain_diagnostic_mx_toolbox", { t0: this.exchange.hostname });
-            }
-        }
+    setMxTooltip(domain) {
+      if (domain.mxValid) {
+        _.set(domain, 'mxTooltip', this.services.$translate.instant(
+          'exchange_tab_domain_diagnostic_mx_toolbox_ok',
+        ));
+      } else {
+        _.set(domain, 'mxTooltip', this.services.$translate.instant(
+          'exchange_tab_domain_diagnostic_mx_toolbox',
+          { t0: this.exchange.hostname },
+        ));
+      }
+    }
 
-        setSrvTooltip (domain) {
-            if (domain.srvValid) {
-                domain.srvTooltip = this.services.$translate.instant("exchange_tab_domain_diagnostic_srv_toolbox_ok");
-            } else {
-                domain.srvTooltip = this.services.$translate.instant("exchange_tab_domain_diagnostic_srv_toolbox", { t0: this.exchange.hostname });
-            }
-        }
+    setSrvTooltip(domain) {
+      if (domain.srvValid) {
+        _.set(domain, 'srvTooltip', this.services.$translate.instant(
+          'exchange_tab_domain_diagnostic_srv_toolbox_ok',
+        ));
+      } else {
+        _.set(domain, 'srvTooltip', this.services.$translate.instant(
+          'exchange_tab_domain_diagnostic_srv_toolbox',
+          { t0: this.exchange.hostname },
+        ));
+      }
+    }
 
-        containPartial () {
-            if (_.has(this.paginated, "domains") && !_.isEmpty(this.paginated.domains)) {
-                return _.find(this.paginated.domains, "partial") != null;
-            }
+    containPartial() {
+      if (_.has(this.paginated, 'domains') && !_.isEmpty(this.paginated.domains)) {
+        return _.find(this.paginated.domains, 'partial') != null;
+      }
 
-            return false;
-        }
-    });
+      return false;
+    }
+  },
+);

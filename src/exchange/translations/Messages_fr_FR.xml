@@ -1683,4 +1683,5 @@ Exchange&#160;: profitez de 50 Go de stockage, des protocoles MAPI et ActiveSync
    <translation id="exchange_wizardHostedCreation_lastDialog_closeButton" qtlid="450558">Finaliser</translation>
 
    <translation id="exchange_table_manage_entry" qtlid="404395">: gérer</translation>
+   <translation id="sharepoint_activate_which_service_label" qtlid="297592">Serveur Exchange à associer</translation>
 </translations>

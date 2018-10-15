@@ -8,40 +8,29 @@
 
 > Exchange module.
 
-## Installation
-
-### Bower
+## Install
 
 ```sh
-$ bower install ovh-module-exchange --save
+yarn add ovh-module-exchange
 ```
 
-### NPM
+## Usage
 
-```sh
-$ npm install ovh-module-exchange --save
+```js
+angular.module('App', [
+  '…',
+  'Module.exchange',
+  '…',
+])
 ```
 
-## Get the sources
+## Related
 
-```sh
-$ git clone https://github.com/ovh-ux/ovh-module-exchange.git
-$ cd ovh-module-exchange
-$ npm install
-$ bower install
-```
-
-You've developed a new cool feature? Fixed an annoying bug? We'd be happy
-to hear from you!
-
-Have a look in [CONTRIBUTING.md](https://github.com/ovh-ux/ovh-module-exchange/blob/master/CONTRIBUTING.md)
-
-## Related links
-
-* Contribute: https://github.com/ovh-ux/ovh-module-exchange/blob/master/CONTRIBUTING.md
-* Report bugs: https://github.com/ovh-ux/ovh-module-exchange/issues
-* Get latest version: https://github.com/ovh-ux/ovh-module-exchange
+* [Web Control Panel UI](https://github.com/ovh-ux/ovh-manager-web).
+* [Emailpro Module](https://github.com/ovh-ux/ovh-module-emailpro).
+* [Office Module](https://github.com/ovh-ux/ovh-module-office).
+* [Sharepoint Module](https://github.com/ovh-ux/ovh-module-sharepoint).
 
 ## License
 
-See https://github.com/ovh-ux/ovh-module-exchange/blob/master/LICENSE
+[BSD-3-Clause](LICENSE) © OVH SAS

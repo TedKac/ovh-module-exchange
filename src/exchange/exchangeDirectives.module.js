@@ -1,1 +1,1 @@
-angular.module("Module.exchange.directives", []);
+angular.module('Module.exchange.directives', []);

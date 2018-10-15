@@ -1,1 +1,1 @@
-angular.module("Module.exchange.controllers", []);
+angular.module('Module.exchange.controllers', []);

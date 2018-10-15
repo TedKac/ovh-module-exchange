@@ -1,1 +1,1 @@
-angular.module("Module.exchange.components", []);
+angular.module('Module.exchange.components', []);

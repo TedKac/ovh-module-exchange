@@ -155,7 +155,7 @@
    <translation id="exchange_tab_accounts_table_outlook_TO_ORDER" qtlid="485736">Pendiente de contratar</translation>
    <translation id="exchange_tab_accounts_table_outlook_TO_ACTIVATE" qtlid="485749">Pendiente de activar</translation>
 
-   <translation id="exchange_tab_ACCOUNTS_action_add_exchange" qtlid="139169">Añadir cuentas de correo</translation>
+   <translation id="exchange_tab_ACCOUNTS_action_add_exchange" qtlid="139169">Contratar cuentas</translation>
    <translation id="exchange_tab_ACCOUNTS_action_add_extern" qtlid="136334">Añadir un contacto externo</translation>
    <translation id="exchange_tab_ACCOUNTS_state_OK" qtlid="424155">Operativo</translation>
    <translation id="exchange_tab_ACCOUNTS_state_CREATING" qtlid="146632">Creando...</translation>
@@ -424,7 +424,7 @@
 
 <!-- ########################################## -->
 <!-- ACCOUNTS -->
-   <translation id="exchange_ACTION_order_accounts_button" qtlid="139169">Añadir cuentas de correo</translation>
+   <translation id="exchange_ACTION_order_accounts_button" qtlid="139169">Contratar cuentas</translation>
    <translation id="exchange_ACTION_order_accounts_title" qtlid="139299">Contratar cuentas Exchange</translation>
    <translation id="exchange_ACTION_order_accounts_step1_intro" qtlid="139312">Elija el modo de pago y el número de cuentas Exchange que desea contratar.</translation>
    <translation id="exchange_ACTION_order_accounts_step1_not_configured_account_message" qtlid="471951">Atención: Tiene al menos una cuenta no configurada en esta plataforma.</translation>
@@ -486,14 +486,13 @@
    <translation id="exchange_account_add_password_hint_complex_1_3_3" qtlid="486178">cifras entre 0 y 9,</translation>
    <translation id="exchange_account_add_password_hint_complex_1_3_4" qtlid="486191">caracteres especiales.</translation>
    <translation id="exchange_account_add_passwordConfirmation_label" qtlid="9983">Confirmar</translation>
-   <translation id="exchange_account_add_order_button" qtlid="43558">Contratar</translation>
+   <translation id="exchange_account_add_confirm_button" qtlid="37923">Añadir</translation>
    <translation id="exchange_account_add_field_error_required" qtlid="472294">Complete este campo.</translation>
    <translation id="exchange_account_add_field_error_doesntRespectComplexityRules" qtlid="486204">Este campo no cumple con los requisitos establecidos.</translation>
    <translation id="exchange_account_add_field_error_passwordConfirmation" qtlid="139637">Contraseñas diferentes.</translation>
    <translation id="exchange_account_add_field_error_pattern" qtlid="472385">Introduzca un formato válido.</translation>
    <translation id="exchange_account_add_submit_success" qtlid="486217">La cuenta {0} se ha creado correctamente. Podrá empezar a utilizarla en unos minutos.</translation>
    <translation id="exchange_ACTION_add_account_legal_warning" qtlid="209099">Acepto que OVH proceda a la ejecución inmediata del servicio una vez sea validado mi pedido y, por consiguiente, renuncio expresamente a ejercer mi derecho de desistimiento, con arreglo a lo dispuesto en los artículos 102 y 103 del Real Decreto Legislativo 1/2007, por el que se aprueba el texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios y otras leyes complementarias.</translation>
-   <translation id="exchange_account_add_confirm_button" qtlid="37923">Añadir</translation>
    <translation id="exchange_ACTION_add_account_title" qtlid="143225">Añadir una cuenta Exchange</translation>
    <translation id="exchange_ACTION_add_account_step1_email_label" qtlid="137244">Cuenta de correo</translation>
    <translation id="exchange_ACTION_add_account_button" qtlid="21487">Añadir una cuenta</translation>
@@ -644,7 +643,7 @@
    <translation id="exchange_tab_domain_target_mail_server_label" qtlid="316957">Servidor de correo de destino</translation>
    <translation id="exchange_tab_domain_noovh_mx_info" qtlid="317126">Deberá realizar los cambios en los registros MX y SRV manualmente en la zona DNS. Una vez realizada la validación CNAME, podrá encontrar la información necesaria en la pestaña «Dominios asociados».</translation>
    <translation id="exchange_tab_domain_modify_domain" qtlid="137101">Configurar un dominio</translation>
-   <translation id="exchange_tab_domain_modify_domain_tooltip" qtlid="444667">El antispam Vade Secure es compatible con el modo no autoritario (solo si sus cuentas POP/IMAP están alojadas en OVH). En ese caso, le aconsejamos que utilice: <strong>{0}</strong>, <strong>{1}</strong>, <strong>{2}</strong> y <strong>{3}</strong><br/><br/>. Si utiliza el modo no autoritario con cuentas de correo no alojadas en OVH, deberá utilizar <strong>{4}</strong> (ver dominios asociados). &#13;
+   <translation id="exchange_tab_domain_modify_domain_tooltip" qtlid="444667">El antispam Vade Secure es compatible con el modo no autoritario (solo si sus cuentas POP/IMAP están alojadas en OVH). En ese caso, le aconsejamos que utilice: <strong>{0}</strong>, <strong>{1}</strong>, <strong>{2}</strong> y <strong>{3}</strong>.<br/><br/>Si utiliza el modo no autoritario con cuentas de correo no alojadas en OVH, deberá utilizar <strong>{4}</strong> (ver dominios asociados). &#13;
 </translation>
    <translation id="exchange_tab_domain_modify_title" qtlid="137920">¿Seguro que quiere modificar el siguiente dominio de su servicio Exchange?</translation>
    <translation id="exchange_tab_domain_modify_loop_warning" qtlid="210319">¡Atención: bucle infinito!</translation>
@@ -1140,7 +1139,7 @@
 
    <translation id="exchange_tab_EXTERNAL_CONTACTS_configuration_contact_add_title" qtlid="136334">Añadir un contacto externo</translation>
    <translation id="exchange_tab_EXTERNAL_CONTACTS_configuration_contact_add_title_button" qtlid="136334">Añadir un contacto externo</translation>
-   <translation id="exchange_tab_EXTERNAL_CONTACTS_configuration_contact_add_step1_question" qtlid="171357">Va a crear un contacto externo</translation>
+   <translation id="exchange_tab_EXTERNAL_CONTACTS_configuration_contact_add_step1_question" qtlid="171357">Va a crear un contacto externo.</translation>
    <translation id="exchange_tab_EXTERNAL_CONTACTS_configuration_contact_add_step1_email_label" qtlid="137244">Cuenta de correo</translation>
    <translation id="exchange_tab_EXTERNAL_CONTACTS_configuration_contact_add_step1_email_invalid" qtlid="171370">La dirección de correo electrónico introducida no es válida</translation>
    <translation id="exchange_tab_EXTERNAL_CONTACTS_configuration_contact_add_step1_organization2010_label" qtlid="32278">Organización</translation>
@@ -1681,4 +1680,5 @@
    <translation id="exchange_wizardHostedCreation_lastDialog_closeButton" qtlid="450558">Terminar</translation>
 
    <translation id="exchange_table_manage_entry" qtlid="404395">: gestionar</translation>
+   <translation id="sharepoint_activate_which_service_label" qtlid="297592">Servidor Exchange a asociar</translation>
 </translations>

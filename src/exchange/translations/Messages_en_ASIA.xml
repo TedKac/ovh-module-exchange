@@ -7,7 +7,7 @@
    <translation id="exchange_search_value" qtlid="55493">Search</translation>
    <translation id="exchange_status_task_planned_or_executing" qtlid="485632">Task scheduled or in progress</translation>
    <translation id="exchange_common_new_tab" qtlid="485645">Open link in new tab</translation>
-   <translation id="exchange_contractTypes_prepaid" qtlid="485658">Prepaid</translation>
+   <translation id="exchange_contractTypes_prepaid" qtlid="485658">Pre-paid</translation>
    <translation id="exchange_contractTypes_payAsYouGo" qtlid="485671">Pay-as-you-go</translation>
    <translation id="exchange_accountCreationMethods_adding" qtlid="47781">Add</translation>
    <translation id="exchange_accountCreationMethods_ordering" qtlid="8302">Order</translation>
@@ -147,7 +147,7 @@
    <translation id="exchange_accounts_types_dedicatedCluster_BASIC" qtlid="374893">Business Email</translation>
    <translation id="exchange_accounts_types_dedicatedCluster_STANDARD" qtlid="80430">Exchange</translation>
 
-   <translation id="exchange_tab_dedicatedCluster_account_type_BASIC" qtlid="485710">Business Email</translation>
+   <translation id="exchange_tab_dedicatedCluster_account_type_BASIC" qtlid="485710">Email Pro</translation>
    <translation id="exchange_tab_dedicatedCluster_account_type_STANDARD" qtlid="80430">Exchange</translation>
 
    <translation id="exchange_tab_accounts_table_outlook_ALREADY_ORDERED" qtlid="485723">Ordered</translation>
@@ -352,7 +352,7 @@
    <translation id="exchange_update_billing_button_title" qtlid="190953">Billing mode</translation>
    <translation id="exchange_update_billing_action_title" qtlid="98324">Renewal period</translation>
    <translation id="exchange_update_billing_periode_intro" qtlid="190966">Select the desired frequency for automatic renewal of each account. <br />This will be applied from the next renewal.</translation>
-   <translation id="exchange_update_billing_expiration_date_label" qtlid="30406">Expiration</translation>
+   <translation id="exchange_update_billing_expiration_date_label" qtlid="30406">Expiry</translation>
    <translation id="exchange_update_billing_current_periode_label" qtlid="190979">Current value</translation>
    <translation id="exchange_update_billing_periode_label" qtlid="168172">Renewal</translation>
    <translation id="exchange_update_billing_header_1Y" qtlid="60390">Yearly</translation>
@@ -460,12 +460,12 @@
    <translation id="exchange_account_add_back_button" qtlid="485905">Add an account</translation>
    <translation id="exchange_account_add_header" qtlid="485918">You can add an email account to your solution. It will be included in your monthly bill.</translation>
    <translation id="exchange_account_add_accountType_label" qtlid="48938">Type of account</translation>
-<translation id="exchange_account_add_accountType_tooltip" qtlid="485931">Business email: get 10 Gb storage, and POP, IMAP and SMTP protocols. Exchange: get 50 Gb storage, and MAPI and ActiveSync protocols.
+<translation id="exchange_account_add_accountType_tooltip" qtlid="485931">Business email: get 10 GB storage, and POP, IMAP and SMTP protocols. Exchange: get 50 GB storage, and MAPI and ActiveSync protocols.
 </translation>
    <translation id="exchange_account_add_emailAddress_label" qtlid="11315">Email address</translation>
 <translation id="exchange_account_add_emailAddress_hint" qtlid="485944">The local part of your email address (the text before the '@') must comply with these rules:<ul>
-<li qtlid="485957">it must start and end with a letter or a number;</li>
-<li qtlid="485970">authorised special characters are ".", "+", "-" and "_";</li>
+<li qtlid="485957">It must start and end with a letter or a number.</li>
+<li qtlid="485970">Authorised special characters are ".", "+", "-" and "_"</li>
 <li qtlid="485983">You cannot have two special characters in a row.</li>
 </ul></translation>
    <translation id="exchange_account_add_emailAddress_error_emailAddressIsAlreadyTaken" qtlid="485996">This email address already exists.</translation>
@@ -477,24 +477,23 @@
    <translation id="exchange_account_add_password_button_show" qtlid="486061">Show password</translation>
    <translation id="exchange_account_add_password_button_hide" qtlid="486074">Hide password</translation>
    <translation id="exchange_account_add_password_hint_simple" qtlid="486087">This field must be at least {0} characters long.</translation>
-   <translation id="exchange_account_add_password_hint_complex_1" qtlid="486100">For security reasons, this field must respect the following criteria:</translation>
-   <translation id="exchange_account_add_password_hint_complex_1_1" qtlid="486113">must not contain the display name or the name of the Exchange 2010 account (not case-sensitive);</translation>
-   <translation id="exchange_account_add_password_hint_complex_1_2" qtlid="486126">must contain at least {0} characters;</translation>
-   <translation id="exchange_account_add_password_hint_complex_1_3" qtlid="486139">must contain elements from three of the following four categories:</translation>
+   <translation id="exchange_account_add_password_hint_complex_1" qtlid="486100">For security reasons, this field must meet the following criteria:</translation>
+   <translation id="exchange_account_add_password_hint_complex_1_1" qtlid="486113">Must not contain the display name or the name of the Exchange 2010 account (not case-sensitive).</translation>
+   <translation id="exchange_account_add_password_hint_complex_1_2" qtlid="486126">Must contain at least {0} characters.</translation>
+   <translation id="exchange_account_add_password_hint_complex_1_3" qtlid="486139">Must contain elements from three of the following four categories.</translation>
    <translation id="exchange_account_add_password_hint_complex_1_3_1" qtlid="486152">lower-case letters,</translation>
    <translation id="exchange_account_add_password_hint_complex_1_3_2" qtlid="486165">capital letters,</translation>
    <translation id="exchange_account_add_password_hint_complex_1_3_3" qtlid="486178">numbers between 0 and 9,</translation>
    <translation id="exchange_account_add_password_hint_complex_1_3_4" qtlid="486191">special characters.</translation>
    <translation id="exchange_account_add_passwordConfirmation_label" qtlid="9983">Order confirmation </translation>
-   <translation id="exchange_account_add_order_button" qtlid="43558">Order</translation>
+   <translation id="exchange_account_add_confirm_button" qtlid="37923">Add</translation>
    <translation id="exchange_account_add_field_error_required" qtlid="472294">Please fill in this field.</translation>
-   <translation id="exchange_account_add_field_error_doesntRespectComplexityRules" qtlid="486204">This field does not comply with the rules on complexity.</translation>
+   <translation id="exchange_account_add_field_error_doesntRespectComplexityRules" qtlid="486204">This field does not meet the complexity requirements.</translation>
    <translation id="exchange_account_add_field_error_passwordConfirmation" qtlid="139637">Passwords are different</translation>
    <translation id="exchange_account_add_field_error_pattern" qtlid="472385">Please enter a valid format.</translation>
    <translation id="exchange_account_add_submit_success" qtlid="486217">The account {0} has been created. You will be able to use it in a few minutes' time.</translation>
    <translation id="exchange_ACTION_add_account_legal_warning" qtlid="209099">I accept that OVH will set up the service immediately on validating my order, and &#13;
 I therefore explicitly renounce my right to cancel under the provisions of Article L.121-21-8 of the Consumer Code.</translation>
-   <translation id="exchange_account_add_confirm_button" qtlid="37923">Add</translation>
    <translation id="exchange_ACTION_add_account_title" qtlid="143225">Add an Exchange account</translation>
    <translation id="exchange_ACTION_add_account_step1_email_label" qtlid="137244">E-mail account</translation>
    <translation id="exchange_ACTION_add_account_button" qtlid="21487">Add an account</translation>
@@ -512,7 +511,7 @@ I therefore explicitly renounce my right to cancel under the provisions of Artic
    <translation id="exchange_ACTION_add_account_outlook_false" qtlid="136308">Without</translation>
    <translation id="exchange_ACTION_add_no_domains" qtlid="170798">You haven't added a domain yet or it still hasn't been validated. <br/>You must enter a domain and wait for it to be validated before you can create an Exchange account.</translation>
    <translation id="exchange_ACTION_add_account_option_fail" qtlid="144045">An error occurred when loading your domains</translation>
-   <translation id="exchange_ACTION_add_account_fetchingAccountCreationOptions_error" qtlid="486230">An error occurred when loading the options for creating an Exchange account.</translation>
+   <translation id="exchange_ACTION_add_account_fetchingAccountCreationOptions_error" qtlid="486230">An error has occurred loading the options for creating an Exchange account.</translation>
    <translation id="exchange_ACTION_add_account_error_message" qtlid="136828">An error occurred on creating the Exchange account.</translation>
    <translation id="exchange_ACTION_update_account_step1_email_label" qtlid="137244">E-mail account</translation>
    <translation id="exchange_ACTION_update_account_step1_type_label" qtlid="191057">Account type</translation>
@@ -1044,20 +1043,20 @@ I therefore explicitly renounce my right to cancel under the provisions of Artic
    <translation id="exchange_ACTION_activate_outlook_title" qtlid="397416">Activate Outlook licence </translation>
    <translation id="exchange_ACTION_activate_outlook_intro_label" qtlid="397429">Do you want to activate the Outlook licence on your Exchange account?</translation>
 
-   <translation id="exchange_accounts_fetchOfficeAttachError_error" qtlid="486269">An error occurred while loading your Office Attach preferences</translation>
-   <translation id="exchange_accounts_fetchAccountCreationOptions_error" qtlid="486282">An error occurred while loading your account creation options</translation>
-   <translation id="exchange_accounts_fetchAccounts_error" qtlid="486295">An error occurred while loading your accounts</translation>
+   <translation id="exchange_accounts_fetchOfficeAttachError_error" qtlid="486269">An error has occurred loading your Office Attach preferences</translation>
+   <translation id="exchange_accounts_fetchAccountCreationOptions_error" qtlid="486282">An error has occurred loading your account creation options</translation>
+   <translation id="exchange_accounts_fetchAccounts_error" qtlid="486295">An error has occurred loading your accounts</translation>
 
    <translation id="exchange_accounts_outlook_deactivate_title" qtlid="485866">Deactivate Outlook licence</translation>
    <translation id="exchange_accounts_outlook_deactivate_intro" qtlid="486308">Do you want to deactivate your Outlook licence?</translation>
    <translation id="exchange_accounts_outlook_deactivate_success" qtlid="486321">Your Outlook account has been deactivated.</translation>
-   <translation id="exchange_accounts_outlook_deactivate_error" qtlid="486334">An error occurred while deactivating your Outlook account.</translation>
+   <translation id="exchange_accounts_outlook_deactivate_error" qtlid="486334">An error has occurred deactivating your Outlook account.</translation>
 
    <translation id="exchange_accounts_outlook_delete_title" qtlid="397377">Delete the Outlook licence </translation>
    <translation id="exchange_accounts_outlook_delete_intro" qtlid="397442">Do you want to delete your Outlook licence?</translation>
    <translation id="exchange_accounts_outlook_delete_note" qtlid="397455">Please note that the Outlook licence will be deleted on the expiry date. </translation>
    <translation id="exchange_accounts_outlook_delete_success" qtlid="486347">The Outlook account has been deleted. This will come into effect when the account expires.</translation>
-   <translation id="exchange_accounts_outlook_delete_error" qtlid="486360">An error occurred while deleting the Outlook account.</translation>
+   <translation id="exchange_accounts_outlook_delete_error" qtlid="486360">An error has occurred deleting the Outlook account.</translation>
 
    <translation id="exchange_ACTION_display_outlook_title" qtlid="136724">Outlook License </translation>
    <translation id="exchange_ACTION_display_outlook_step1_wait_label" qtlid="170941">An Outlook download link is currently active. Please wait until it has expired (5 minutes maximum) before generating a new licence key.</translation>
@@ -1683,4 +1682,5 @@ I therefore explicitly renounce my right to cancel under the provisions of Artic
    <translation id="exchange_wizardHostedCreation_lastDialog_closeButton" qtlid="450558">Finalise</translation>
 
    <translation id="exchange_table_manage_entry" qtlid="404395">: manage</translation>
+   <translation id="sharepoint_activate_which_service_label" qtlid="297592">Exchange server to link to </translation>
 </translations>

@@ -22,7 +22,7 @@
    <translation id="exchange_offer_type_25g" qtlid="264042">Exchange individual</translation>
    <translation id="exchange_dashboard_loading_error" qtlid="168120">Se ha producido un error al cargar la información.</translation>
    <translation id="exchange_dashboard_action_doing" qtlid="149787">Realizando la operación...</translation>
-   <translation id="exchange_dashboard_display_name_edit" qtlid="37875">Modifier</translation>
+   <translation id="exchange_dashboard_display_name_edit" qtlid="37875">Modificar</translation>
    <translation id="exchange_dashboard_display_name_save" qtlid="177912">Mínimo 4 caracteres.</translation>
    <translation id="exchange_dashboard_display_name_min" qtlid="177925">Operación cancelada. Mínimo 5 caracteres.</translation>
    <translation id="exchange_dashboard_display_name_reset" qtlid="37935">Opération annulée</translation>
@@ -56,7 +56,7 @@
    <translation id="exchange_dashboard_diag_ptrv6_tooltip_title" qtlid="143329">PTR v6</translation>
    <translation id="exchange_dashboard_diag_ptrv6_tooltip_ok" qtlid="137491">Configuración automática realizada</translation>
    <translation id="exchange_dashboard_diag_ptrv6_tooltip_error" qtlid="143342">Existe un problema en la resolución inversa de su dirección IPv6. Por favor, contacte con el soporte.</translation>
-   <translation id="exchange_dashboard_billing" qtlid="32950">Facturation</translation>
+   <translation id="exchange_dashboard_billing" qtlid="32950">Facturación</translation>
    <translation id="exchange_dashboard_expiration" qtlid="168172">Renovación</translation>
    <translation id="exchange_dashboard_ssl_expiration" qtlid="190797">Expiración SSL</translation>
    <translation id="exchange_dashboard_stats" qtlid="26671">Statistiques</translation>
@@ -90,7 +90,7 @@
 
 <!-- ########################################## -->
 <!-- TABS -->
-   <translation id="exchange_tab_INFORMATION" qtlid="27115">Informations générales</translation>
+   <translation id="exchange_tab_INFORMATION" qtlid="27115">Información general</translation>
    <translation id="exchange_tab_DOMAIN" qtlid="276311">Dominios asociados</translation>
    <translation id="exchange_tab_ACCOUNT" qtlid="74273">Comptes e-mail</translation>
    <translation id="exchange_tab_SHARED_ACCOUNT" qtlid="215195">Cuentas compartidas</translation>
@@ -106,7 +106,7 @@
 
    <translation id="exchange_tab_INFORMATIONS_summary" qtlid="4082">Résumé</translation>
    <translation id="exchange_tab_INFORMATIONS_stats" qtlid="26671">Statistiques</translation>
-   <translation id="exchange_tab_INFORMATIONS_server" qtlid="8290">Serveur</translation>
+   <translation id="exchange_tab_INFORMATIONS_server" qtlid="8290">Servidor</translation>
    <translation id="exchange_tab_INFORMATIONS_connexion" qtlid="55925">Connexion</translation>
    <translation id="exchange_tab_INFORMATIONS_sharepoint" qtlid="319401">SharePoint asociado</translation>
    <translation id="exchange_tab_INFORMATIONS_sharepoint_url" qtlid="297930">URL de consulta</translation>
@@ -135,7 +135,7 @@
    <translation id="exchange_tab_ACCOUNTS_table_alias" qtlid="9466">Alias</translation>
    <translation id="exchange_tab_ACCOUNTS_table_group" qtlid="59507">Groupe</translation>
    <translation id="exchange_tab_ACCOUNTS_table_outlook" qtlid="24427">Outlook</translation>
-   <translation id="exchange_tab_ACCOUNTS_table_status" qtlid="26443">Statut</translation>
+   <translation id="exchange_tab_ACCOUNTS_table_status" qtlid="26443">Estado</translation>
    <translation id="exchange_tab_ACCOUNTS_table_settings" qtlid="4406">Configuración</translation>
    <translation id="exchange_tab_ACCOUNTS_type_ALL" qtlid="69173">Tous</translation>
    <translation id="exchange_tab_ACCOUNTS_type_BASIC" qtlid="48986">Basic</translation>
@@ -171,7 +171,7 @@
    <translation id="exchange_tab_ACCOUNTS_state_UNKNOWN" qtlid="77142">Inconnu</translation>
    <translation id="exchange_tab_ACCOUNTS_state_TO_CONFIGURE" qtlid="424142">Configuracion pendiente</translation>
 
-   <translation id="exchange_tab_ACCOUNTS_menu_edit" qtlid="37875">Modifier</translation>
+   <translation id="exchange_tab_ACCOUNTS_menu_edit" qtlid="37875">Modificar</translation>
    <translation id="exchange_tab_ACCOUNTS_menu_alias" qtlid="485801">Gestionar los alias</translation>
    <translation id="exchange_tab_ACCOUNTS_menu_delegations" qtlid="288782">Gestionar las delegaciones</translation>
    <translation id="exchange_tab_ACCOUNTS_menu_exportToPST" qtlid="485814">Exportar e formato PST</translation>
@@ -352,10 +352,10 @@
    <translation id="exchange_update_billing_button_title" qtlid="190953">Modo de facturación</translation>
    <translation id="exchange_update_billing_action_title" qtlid="98324">Période de renouvellement</translation>
    <translation id="exchange_update_billing_periode_intro" qtlid="190966">Seleccione la periodicidad deseada para la renovación automática de cada cuenta. <br />Esta se aplicará a partir de la siguiente renovación.</translation>
-   <translation id="exchange_update_billing_expiration_date_label" qtlid="30406">Expiration</translation>
+   <translation id="exchange_update_billing_expiration_date_label" qtlid="30406">Expiración</translation>
    <translation id="exchange_update_billing_current_periode_label" qtlid="190979">Valor actual</translation>
    <translation id="exchange_update_billing_periode_label" qtlid="168172">Renovación</translation>
-   <translation id="exchange_update_billing_header_1Y" qtlid="60390">Annuel</translation>
+   <translation id="exchange_update_billing_header_1Y" qtlid="60390">Anual</translation>
    <translation id="exchange_update_billing_header_1M" qtlid="60378">Mensuel</translation>
    <translation id="exchange_update_billing_header_terminate" qtlid="209177">Ninguna</translation>
    <translation id="exchange_update_billing_header_new_periode" qtlid="190992">Nuevo período</translation>
@@ -406,7 +406,7 @@
    <translation id="exchange_tab_domain_diagnostic_srv_toolbox_ok" qtlid="137491">Configuración automática realizada</translation>
    <translation id="exchange_tab_domain_error_message" qtlid="144045">Se ha producido un error al cargar los dominios.</translation>
    <translation id="exchange_tab_domain_diagnostic_cname" qtlid="129847">CNAME</translation>
-   <translation id="exchange_tab_domain_status" qtlid="26443">Statut</translation>
+   <translation id="exchange_tab_domain_status" qtlid="26443">Estado</translation>
    <translation id="exchange_tab_domain_task_in_progress" qtlid="2690">Tâche en cours</translation>
    <translation id="exchange_tab_domain_validation" qtlid="33802">Validation</translation>
    <translation id="exchange_tab_domain_validation_doing" qtlid="136646">Validando dominio...</translation>
@@ -486,14 +486,13 @@
    <translation id="exchange_account_add_password_hint_complex_1_3_3" qtlid="486178">cifras entre 0 y 9,</translation>
    <translation id="exchange_account_add_password_hint_complex_1_3_4" qtlid="486191">caracteres especiales.</translation>
    <translation id="exchange_account_add_passwordConfirmation_label" qtlid="9983">Confirmation</translation>
-   <translation id="exchange_account_add_order_button" qtlid="43558">Contratar</translation>
+   <translation id="exchange_account_add_confirm_button" qtlid="37923">Añadir</translation>
    <translation id="exchange_account_add_field_error_required" qtlid="472294">Debe llenar este campo.</translation>
    <translation id="exchange_account_add_field_error_doesntRespectComplexityRules" qtlid="486204">Este campo no cumple con los requisitos establecidos.</translation>
    <translation id="exchange_account_add_field_error_passwordConfirmation" qtlid="139637">Contraseñas diferentes</translation>
    <translation id="exchange_account_add_field_error_pattern" qtlid="472385">Debe introducir un formato válido.</translation>
    <translation id="exchange_account_add_submit_success" qtlid="486217">La cuenta {0} se ha creado correctamente y podrá utilizarla en unos minutos.</translation>
    <translation id="exchange_ACTION_add_account_legal_warning" qtlid="209099">Acepto que OVH proceda a la ejecución inmediata del servicio una vez sea validado mi pedido y, por consiguiente, renuncio expresamente a ejercer mi derecho de retractación, con arreglo a lo dispuesto en el artículo L.121-21-8 del código de consumo.</translation>
-   <translation id="exchange_account_add_confirm_button" qtlid="37923">Añadir</translation>
    <translation id="exchange_ACTION_add_account_title" qtlid="143225">Añadir una cuenta Exchange</translation>
    <translation id="exchange_ACTION_add_account_step1_email_label" qtlid="137244">Cuenta de correo</translation>
    <translation id="exchange_ACTION_add_account_button" qtlid="21487">Ajouter un compte</translation>
@@ -572,7 +571,7 @@
    <translation id="exchange_ACTION_change_password_account_error_message" qtlid="157447">Se ha producido un error al cambiar la contraseña. </translation>
    <translation id="exchange_ACTION_change_password_account_error_message_linked" qtlid="148279">Sin embargo, se ha producido un error al cambiar la contraseña.</translation>
    <translation id="exchange_ACTION_update_account_title" qtlid="137712">Editar la cuenta Exchange</translation>
-   <translation id="exchange_ACTION_update_account_tooltip" qtlid="37875">Modifier</translation>
+   <translation id="exchange_ACTION_update_account_tooltip" qtlid="37875">Modificar</translation>
    <translation id="exchange_ACTION_update_account_shared_password_warning" qtlid="316918">La contraseña será modificada también para el servicio SharePoint asociado.</translation>
    <translation id="exchange_tab_account_reset_account" qtlid="376024">Restaurar una cuenta</translation>
    <translation id="exchange_tab_account_reset_email_info" qtlid="376037">La restauración de una cuenta consiste en eliminar los datos y el nombre asociado. La cuenta se seguirá facturando. Si ya no desea que se le facture, haga clic en «Modo de facturación», marque «Ninguno» para la cuenta correspondiente y acepte.</translation>
@@ -689,14 +688,14 @@
    <translation id="exchange_tab_DISCLAIMER_table_empty" qtlid="152258">No hay firmas.</translation>
    <translation id="exchange_tab_DISCLAIMER_disclaimer_content" qtlid="152271">Contenido</translation>
    <translation id="exchange_tab_DISCLAIMER_associated_domains" qtlid="133110">Dominio asociado</translation>
-   <translation id="exchange_tab_DISCLAIMER_state_header" qtlid="26443">Statut</translation>
+   <translation id="exchange_tab_DISCLAIMER_state_header" qtlid="26443">Estado</translation>
    <translation id="exchange_tab_DISCLAIMER_state_doing_tooltip" qtlid="143863">Hay una tarea planificada o realizándose.</translation>
    <translation id="exchange_tab_DISCLAIMER_disclaimer_outside_only" qtlid="152284">Sólo externo</translation>
    <translation id="exchange_tab_DISCLAIMER_disclaimer_outside_only_tooltip" qtlid="152297">Firma utilizada únicamente para los envíos hacia el exterior</translation>
    <translation id="exchange_tab_DISCLAIMER_disclaimer_outside_only_true" qtlid="34776">Oui</translation>
    <translation id="exchange_tab_DISCLAIMER_disclaimer_outside_only_false" qtlid="34788">Non</translation>
    <translation id="exchange_tab_DISCLAIMER_table_no_domain" qtlid="152310">Añada un dominio y espere a que esté activo para crear una firma.</translation>
-   <translation id="exchange_tab_DISCLAIMER_menu_settings" qtlid="37875">Modifier</translation>
+   <translation id="exchange_tab_DISCLAIMER_menu_settings" qtlid="37875">Modificar</translation>
    <translation id="exchange_tab_DISCLAIMER_menu_delete" qtlid="2414">Eliminar</translation>
    <translation id="exchange_ACTION_add_disclaimer_button" qtlid="152206">Añadir una firma</translation>
    <translation id="exchange_ACTION_add_disclaimer_title" qtlid="152206">Añadir una firma</translation>
@@ -708,7 +707,7 @@
    <translation id="exchange_ACTION_add_disclaimer_outside" qtlid="152349">Activar la firma solo para los envíos hacia el exterior</translation>
    <translation id="exchange_ACTION_add_disclaimer_success_message" qtlid="152362">La firma va a crearse.</translation>
    <translation id="exchange_ACTION_add_disclaimer_error_message" qtlid="152375">Se ha producido un error al crear la firma.</translation>
-   <translation id="exchange_ACTION_add_disclaimer_option_City" qtlid="33310">Ville</translation>
+   <translation id="exchange_ACTION_add_disclaimer_option_City" qtlid="33310">Ciudad</translation>
    <translation id="exchange_ACTION_add_disclaimer_option_Company" qtlid="49022">Entreprise</translation>
    <translation id="exchange_ACTION_add_disclaimer_option_Country" qtlid="25171">Pays</translation>
    <translation id="exchange_ACTION_add_disclaimer_option_Department" qtlid="30706">Département</translation>
@@ -733,7 +732,7 @@
    <translation id="exchange_ACTION_add_disclaimer_option_Street" qtlid="152518">Calle</translation>
    <translation id="exchange_ACTION_add_disclaimer_option_Title" qtlid="16469">Titre</translation>
    <translation id="exchange_ACTION_add_disclaimer_option_UserLogonName" qtlid="46792">Identifiant</translation>
-   <translation id="exchange_ACTION_add_disclaimer_option_ZipCode" qtlid="30346">Code postal</translation>
+   <translation id="exchange_ACTION_add_disclaimer_option_ZipCode" qtlid="30346">Código postal</translation>
    <translation id="exchange_ACTION_add_disclaimer_helpwizard_title" qtlid="152531">La firma</translation>
    <translation id="exchange_ACTION_add_disclaimer_helpwizard_details" qtlid="170837"><br />Puede crear una firma para cada dominio validado.<br /><br />Utilice las herramientas a su disposición para personalizar y configurar su firma,<br /> la cual se añadirá automáticamente al final de cada mensaje enviado desde las direcciones asociadas a su dominio Exchange. <br /><br />También puede utilizar variables para personalizar la firma genérica con la información de los distintos colaboradores. <br /><br /> Para añadir una imagen o un logo, haga clic en el botón «Imagen» e inserte su URL.</translation>
    <translation id="exchange_ACTION_add_disclaimer_no_domains" qtlid="155274">Sólo puede crear una firma por cada dominio validado y actualmente todos sus dominios validados tienen firma.</translation>
@@ -767,7 +766,7 @@
    <translation id="exchange_tab_RESOURCES_add_resource_step2_title" qtlid="156264">¿Seguro que quiere añadir la siguiente cuenta de recursos al servidor Exchange?</translation>
    <translation id="exchange_tab_RESOURCES_add_resource_success" qtlid="156277">Va a añadirse la cuenta de recursos.</translation>
    <translation id="exchange_tab_RESOURCES_edit_resource_step2_title" qtlid="156290">¿Seguro que desea modificar el recurso {0}?</translation>
-   <translation id="exchange_tab_RESOURCES_edit_resource_confirm" qtlid="37875">Modifier</translation>
+   <translation id="exchange_tab_RESOURCES_edit_resource_confirm" qtlid="37875">Modificar</translation>
    <translation id="exchange_tab_RESOURCES_edit_resource_success" qtlid="156303">Va a modificarse la cuenta de recursos.</translation>
    <translation id="exchange_tab_RESOURCES_edit_resource_error" qtlid="155574">Se ha producido un error al modificar la cuenta de recursos.</translation>
    <translation id="exchange_tab_RESOURCES_no_domain_warning" qtlid="171253">Aún no ha añadido ningún dominio o este todavía no ha sido validado. <br/>Para crear una cuenta Exchange es necesario añadir un dominio en primer lugar y esperar a que sea validado.</translation>
@@ -784,7 +783,7 @@
    <translation id="exchange_tab_RESOURCES_table_capacity" qtlid="4334">Capacité</translation>
    <translation id="exchange_tab_RESOURCES_table_allow_conflicts" qtlid="156407">Conflicto autorizado</translation>
    <translation id="exchange_tab_RESOURCES_table_email" qtlid="69509">E-mail</translation>
-   <translation id="exchange_tab_RESOURCES_table_state" qtlid="26443">Statut</translation>
+   <translation id="exchange_tab_RESOURCES_table_state" qtlid="26443">Estado</translation>
    <translation id="exchange_tab_RESOURCES_table_state_task" qtlid="156420">Tarea en proceso</translation>
    <translation id="exchange_tab_RESOURCES_action_add_resource_account" qtlid="63710">Ajouter un compte de ressource</translation>
    <translation id="exchange_tab_RESOURCES_type_EQUIPMENT" qtlid="82063">Équipement</translation>
@@ -792,7 +791,7 @@
    <translation id="exchange_tab_RESOURCES_allow_conflicts_true" qtlid="34776">Oui</translation>
    <translation id="exchange_tab_RESOURCES_allow_conflicts_false" qtlid="34788">Non</translation>
    <translation id="exchange_tab_RESOURCES_popover_delete" qtlid="2414">Eliminar</translation>
-   <translation id="exchange_tab_RESOURCES_tooltip_edit" qtlid="37875">Modifier</translation>
+   <translation id="exchange_tab_RESOURCES_tooltip_edit" qtlid="37875">Modificar</translation>
    <translation id="exchange_tab_RESOURCES_wizard_intro" qtlid="170863">La función «cuentas de recursos» de Outlook le permite planificar las necesidades de sus colaboradores. <br /> Puede crear tantas cuentas de recursos como desee.</translation>
    <translation id="exchange_tab_RESOURCES_wizard_type" qtlid="171266">Hay dos tipos de recursos disponibles: «Sala» y «Equipo».<br /> Solo tiene que indicar los siguientes valores: <ul><li>Nombre</li> <li> Capacidad</li></ul></translation>
    <translation id="exchange_tab_RESOURCES_wizard_example" qtlid="191148"><b>Ejemplo:</b> Quiere reservar la sala <b>«X»</b>, que tiene una capacidad de <b>«N»</b> personas.</translation>
@@ -913,8 +912,8 @@
    <translation id="exchange_tab_GROUPS_all_table_name" qtlid="43936">Nom du groupe</translation>
    <translation id="exchange_tab_GROUPS_all_table_address" qtlid="11315">Adresse e-mail</translation>
    <translation id="exchange_tab_GROUPS_all_table_manager" qtlid="81487">Administrateurs</translation>
-   <translation id="exchange_tab_GROUPS_all_table_user" qtlid="32206">Contacts</translation>
-   <translation id="exchange_tab_GROUPS_all_table_status" qtlid="26443">Statut</translation>
+   <translation id="exchange_tab_GROUPS_all_table_user" qtlid="32206">Contactos</translation>
+   <translation id="exchange_tab_GROUPS_all_table_status" qtlid="26443">Estado</translation>
    <translation id="exchange_tab_GROUPS_all_table_empty" qtlid="150346">No hay grupos.</translation>
    <translation id="exchange_tab_GROUPS_all_error_message" qtlid="150359">Se ha producido un error al cargar la lista de grupos.</translation>
    <translation id="exchange_tab_GROUPS_all_add_ml_button" qtlid="150372">Crear un grupo de contactos</translation>
@@ -929,7 +928,7 @@
    <translation id="exchange_tab_GROUPS_delete_group_label" qtlid="59507">Groupe</translation>
    <translation id="exchange_tab_GROUPS_delete_name_label" qtlid="43936">Nom du groupe</translation>
    <translation id="exchange_tab_GROUPS_delete_group_manager" qtlid="81487">Administrateurs</translation>
-   <translation id="exchange_tab_GROUPS_delete_group_user" qtlid="32206">Contacts</translation>
+   <translation id="exchange_tab_GROUPS_delete_group_user" qtlid="32206">Contactos</translation>
    <translation id="exchange_tab_GROUPS_delete_group_success" qtlid="150151">El grupo va a eliminarse.</translation>
    <translation id="exchange_tab_GROUPS_delete_group_error" qtlid="150164">Se ha producido un error al eliminar el grupo.</translation>
    <translation id="exchange_GROUPS_delegation_title" qtlid="150398">Configuración de la delegación</translation>
@@ -986,7 +985,7 @@
    <translation id="exchange_GROUPS_remove_manager_title" qtlid="150736">Eliminar un administrador</translation>
    <translation id="exchange_GROUPS_remove_manager_question" qtlid="150749">¿Seguro que quiere eliminar la siguiente cuenta de la lista de administradores del grupo?</translation>
    <translation id="exchange_GROUPS_remove_manager_group_label" qtlid="59507">Groupe</translation>
-   <translation id="exchange_GROUPS_remove_manager_manager_label" qtlid="43948">Administrateur</translation>
+   <translation id="exchange_GROUPS_remove_manager_manager_label" qtlid="43948">Administrador</translation>
    <translation id="exchange_GROUPS_remove_manager_success_message" qtlid="434603">La cuenta <strong>{0}</strong> va a eliminarse de la lista de administradores del grupo <span class="bold">{1}</span>.</translation>
    <translation id="exchange_GROUPS_remove_manager_error_message" qtlid="155912">Se ha producido un error al eliminar la cuenta <span class="bold">{0}</span> de la lista de administradores del grupo <span class="bold">{1}</span>.</translation>
    <translation id="exchange_GROUPS_member_intro" qtlid="434616">Cuentas de contactos del grupo <strong>{0}</strong></translation>
@@ -1031,8 +1030,8 @@
    <translation id="exchange_ACTION_add_outlook_contracts_label" qtlid="169472">Para confirmar su solicitud, acepte las condiciones de uso y haga clic en «Siguiente».</translation>
    <translation id="exchange_ACTION_add_outlook_contracts__checkbox" qtlid="170070">He leído y entiendo los siguientes documentos:</translation>
    <translation id="exchange_ACTION_add_outlook_intro_step2_label" qtlid="156888">Resumen del pedido de licencia Outlook para {0}</translation>
-   <translation id="exchange_ACTION_add_outlook_duration_type_01" qtlid="70241">1 mois</translation>
-   <translation id="exchange_ACTION_add_outlook_duration_type_12" qtlid="70277">1 an</translation>
+   <translation id="exchange_ACTION_add_outlook_duration_type_01" qtlid="70241">1 mes</translation>
+   <translation id="exchange_ACTION_add_outlook_duration_type_12" qtlid="70277">1 año</translation>
    <translation id="exchange_ACTION_add_outlook_step2_error_message" qtlid="156901">Se ha producido un error al contratar la licencia Outlook.</translation>
    <translation id="exchange_ACTION_add_outlook_order_step2_generation_bc" qtlid="169511">Generando la orden de pedido...</translation>
    <translation id="exchange_ACTION_add_outlook_order_step2_bc_ok" qtlid="169524">La orden de pedido se ha generado correctamente.</translation>
@@ -1122,7 +1121,7 @@
    <translation id="exchange_tab_EXTERNAL_CONTACTS_table_headers_externalEmailAddress" qtlid="30430">Dirección </translation>
    <translation id="exchange_tab_EXTERNAL_CONTACTS_table_headers_displayName" qtlid="80922">Nom affiché</translation>
    <translation id="exchange_tab_EXTERNAL_CONTACTS_table_headers_creationDate" qtlid="4358">Créé le</translation>
-   <translation id="exchange_tab_EXTERNAL_CONTACTS_table_headers_state" qtlid="26443">Statut</translation>
+   <translation id="exchange_tab_EXTERNAL_CONTACTS_table_headers_state" qtlid="26443">Estado</translation>
    <translation id="exchange_tab_EXTERNAL_CONTACTS_table_headers_state_CREATING" qtlid="26227">En création</translation>
    <translation id="exchange_tab_EXTERNAL_CONTACTS_table_headers_state_DELETING" qtlid="133929">Eliminando</translation>
    <translation id="exchange_tab_EXTERNAL_CONTACTS_table_headers_state_REOPENING" qtlid="171279">Reabriendo</translation>
@@ -1130,7 +1129,7 @@
    <translation id="exchange_tab_EXTERNAL_CONTACTS_table_headers_state_SUSPENDING" qtlid="171292">Suspendiendo</translation>
    <translation id="exchange_tab_EXTERNAL_CONTACTS_table_headers_state_MODIFYING" qtlid="174646">Modificando</translation>
    <translation id="exchange_tab_EXTERNAL_CONTACTS_table_headers_state_OK" qtlid="433745">Ok</translation>
-   <translation id="exchange_tab_EXTERNAL_CONTACTS_table_actions_menu_modify" qtlid="37875">Modifier</translation>
+   <translation id="exchange_tab_EXTERNAL_CONTACTS_table_actions_menu_modify" qtlid="37875">Modificar</translation>
    <translation id="exchange_tab_EXTERNAL_CONTACTS_table_actions_menu_delete" qtlid="2414">Eliminar</translation>
    <translation id="exchange_tab_EXTERNAL_CONTACTS_table_tooltip_GAL_false" qtlid="184906">La dirección aparece en Outlook</translation>
    <translation id="exchange_tab_EXTERNAL_CONTACTS_table_tooltip_GAL_true" qtlid="184919">La dirección no aparece en Outlook</translation>
@@ -1295,15 +1294,15 @@
    <translation id="lockoutThreshold_unit_value_1" qtlid="178432">1 intento</translation>
    <translation id="lockoutThreshold_unit_value_many" qtlid="178445">{0} intentos</translation>
    <translation id="lockoutDuration_unit_value_0" qtlid="178458">La cuenta se bloqueará hasta que un administrador la desbloquee expresamente.</translation>
-   <translation id="lockoutDuration_unit_value_1" qtlid="32326">1 minute</translation>
+   <translation id="lockoutDuration_unit_value_1" qtlid="32326">1 minuto</translation>
    <translation id="lockoutDuration_unit_value_many" qtlid="146814">{0} minutos</translation>
-   <translation id="lockoutObservationWindow_unit_value_1" qtlid="32326">1 minute</translation>
+   <translation id="lockoutObservationWindow_unit_value_1" qtlid="32326">1 minuto</translation>
    <translation id="lockoutObservationWindow_unit_value_many" qtlid="146814">{0} minutos</translation>
    <translation id="minPasswordAge_unit_value_0" qtlid="178471">Los cambios se autorizan de inmediato.</translation>
-   <translation id="minPasswordAge_unit_value_1" qtlid="28807">1 jour</translation>
+   <translation id="minPasswordAge_unit_value_1" qtlid="28807">1 día</translation>
    <translation id="minPasswordAge_unit_value_many" qtlid="178484">{0} días</translation>
    <translation id="maxPasswordAge_unit_value_0" qtlid="178497">Las contraseñas no expiran nunca.</translation>
-   <translation id="maxPasswordAge_unit_value_1" qtlid="28807">1 jour</translation>
+   <translation id="maxPasswordAge_unit_value_1" qtlid="28807">1 día</translation>
    <translation id="maxPasswordAge_unit_value_many" qtlid="178484">{0} días</translation>
    <translation id="passwordHistoryCount_unit_value_0" qtlid="376180">La contraseña actual se puede reutilizar.</translation>
    <translation id="passwordHistoryCount_unit_value_1" qtlid="376193">1 contraseña</translation>
@@ -1406,7 +1405,7 @@
    <translation id="exchange_tab_SHARED_header_status" qtlid="447859">Estado</translation>
    <translation id="exchange_tab_SHARED_header_access_PLAIN" qtlid="61656">Répertoire</translation>
    <translation id="exchange_tab_SHARED_header_access_CALENDAR" qtlid="201523">Calendario</translation>
-   <translation id="exchange_tab_SHARED_header_access_CONTACTS" qtlid="32206">Contacts</translation>
+   <translation id="exchange_tab_SHARED_header_access_CONTACTS" qtlid="32206">Contactos</translation>
    <translation id="exchange_tab_SHARED_header_access_TASKS" qtlid="96716">Tâches</translation>
    <translation id="exchange_tab_SHARED_all_error_message" qtlid="201536">Se ha producido un error al cargar la lista de elementos compartidos.</translation>
    <translation id="exchange_tab_SHARED_max_quota_error_message" qtlid="201549">Ha consumido todo el espacio destinado a elementos compartidos. Para compartir más elementos, reduzca la cuota asignada a los demás elementos compartidos o elimine elementos.</translation>
@@ -1610,7 +1609,7 @@
    <translation id="exchange_wizardHostedCreation_emailCreation_introduction_2" qtlid="450051">Si necesita más cuentas, podrá contratarlas posteriormente en la pestaña «Cuentas de correo» de su servicio Hosted Exchange.</translation>
    <translation id="exchange_wizardHostedCreation_emailCreation_header_email" qtlid="11315">Adresse e-mail</translation>
    <translation id="exchange_wizardHostedCreation_emailCreation_header_displayName" qtlid="23515">Nom à afficher</translation>
-   <translation id="exchange_wizardHostedCreation_emailCreation_header_state" qtlid="26443">Statut</translation>
+   <translation id="exchange_wizardHostedCreation_emailCreation_header_state" qtlid="26443">Estado</translation>
    <translation id="exchange_wizardHostedCreation_emailCreation_operationInProgress" qtlid="450064">Una vez que se completen las operaciones en curso, podrá volver a personalizar sus cuentas de correo.</translation>
    <translation id="exchange_wizardHostedCreation_emailCreation_personnalizeButton" qtlid="450077">Personalizar una cuenta</translation>
 
@@ -1644,7 +1643,7 @@
    <translation id="exchange_wizardHostedCreation_emailCreation_nextButton_title" qtlid="37923">Añadir</translation>
 
    <translation id="exchange_wizardHostedCreation_emailCreation_update_firstName_title" qtlid="450337">Modificar una cuenta de correo</translation>
-   <translation id="exchange_wizardHostedCreation_emailCreation_updateButton_title" qtlid="37875">Modifier</translation>
+   <translation id="exchange_wizardHostedCreation_emailCreation_updateButton_title" qtlid="37875">Modificar</translation>
 
    <translation id="exchange_wizardHostedCreation_emailCreation_update_changePassword_checkbox" qtlid="80394">Changer le mot de passe</translation>
 
@@ -1680,4 +1679,5 @@
    <translation id="exchange_wizardHostedCreation_lastDialog_closeButton" qtlid="450558">Finalizar</translation>
 
    <translation id="exchange_table_manage_entry" qtlid="404395">: gestionar</translation>
+   <translation id="sharepoint_activate_which_service_label" qtlid="297592">Servidor Exchange a asociar</translation>
 </translations>

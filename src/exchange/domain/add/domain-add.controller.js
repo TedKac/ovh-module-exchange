@@ -1,225 +1,258 @@
-angular
-    .module("Module.exchange.controllers")
-    .controller("ExchangeAddDomainController", class ExchangeAddDomainController {
-        constructor ($rootScope, $scope, Exchange, ExchangeDomains, messaging, navigation, ovhUserPref, $translate, Validator, exchangeVersion, exchangeServiceInfrastructure, User) {
-            this.services = {
-                $rootScope,
-                $scope,
-                Exchange,
-                ExchangeDomains,
-                messaging,
-                navigation,
-                ovhUserPref,
-                $translate,
-                Validator,
-                exchangeVersion,
-                exchangeServiceInfrastructure
-            };
+angular.module('Module.exchange.controllers').controller(
+  'ExchangeAddDomainController',
+  class ExchangeAddDomainController {
+    constructor(
+      $rootScope,
+      $scope,
+      Exchange,
+      ExchangeDomains,
+      messaging,
+      navigation,
+      ovhUserPref,
+      $translate,
+      Validator,
+      exchangeVersion,
+      exchangeServiceInfrastructure,
+      User,
+    ) {
+      this.services = {
+        $rootScope,
+        $scope,
+        Exchange,
+        ExchangeDomains,
+        messaging,
+        navigation,
+        ovhUserPref,
+        $translate,
+        Validator,
+        exchangeVersion,
+        exchangeServiceInfrastructure,
+      };
 
-            this.OVH_DOMAIN = "ovh-domain";
-            this.NON_OVH_DOMAIN = "non-ovh-domain";
-            this.exchange = Exchange.value;
+      this.OVH_DOMAIN = 'ovh-domain';
+      this.NON_OVH_DOMAIN = 'non-ovh-domain';
+      this.exchange = Exchange.value;
 
-            this.debouncedResetName = _.debounce(this.search, 300);
+      this.debouncedResetName = _.debounce(this.search, 300);
 
-            this.$routerParams = Exchange.getParams();
-            this.noDomainAttached = _(navigation.currentActionData).get("noDomainAttached", true);
-            this.loading = false;
-            this.model = {
-                name: "",
-                displayName: "",
-                isUTF8Domain: false,
-                srvParam: true,
-                mxParam: false,
-                domainType: this.OVH_DOMAIN
-            };
+      this.$routerParams = Exchange.getParams();
+      this.noDomainAttached = _(navigation.currentActionData).get('noDomainAttached', true);
+      this.loading = false;
+      this.model = {
+        name: '',
+        displayName: '',
+        isUTF8Domain: false,
+        srvParam: true,
+        mxParam: false,
+        domainType: this.OVH_DOMAIN,
+      };
 
-            this.search = {
-                value: null
-            };
+      this.search = {
+        value: null,
+      };
 
-            this.ovhDomain = this.OVH_DOMAIN;
-            this.nonOvhDomain = this.NON_OVH_DOMAIN;
+      this.ovhDomain = this.OVH_DOMAIN;
+      this.nonOvhDomain = this.NON_OVH_DOMAIN;
 
-            $scope.loadDomainData = () => this.loadDomainData();
-            $scope.addDomain = () => this.addDomain();
-            $scope.isNonOvhDomainValid = () => this.isNonOvhDomainValid();
-            $scope.checkDomain = () => this.checkDomain();
-            $scope.isStep2Valid = () => this.isStep2Valid();
-            $scope.checkDomainType = () => this.checkDomainType();
-            $scope.isStep3Valid = () => this.isStep3Valid();
+      $scope.loadDomainData = () => this.loadDomainData();
+      $scope.addDomain = () => this.addDomain();
+      $scope.isNonOvhDomainValid = () => this.isNonOvhDomainValid();
+      $scope.checkDomain = () => this.checkDomain();
+      $scope.isStep2Valid = () => this.isStep2Valid();
+      $scope.checkDomainType = () => this.checkDomainType();
+      $scope.isStep3Valid = () => this.isStep3Valid();
 
-            User.getUser()
-                .then((currentUser) => {
-                    this.canOpenWizard = currentUser.ovhSubsidiary !== "CA";
-                });
+      User.getUser().then((currentUser) => {
+        this.canOpenWizard = currentUser.ovhSubsidiary !== 'CA';
+      });
+    }
+
+    isStep3Valid() {
+      return this.model.type;
+    }
+
+    onSearchValueChange() {
+      this.debouncedResetName();
+    }
+
+    prepareData(data) {
+      this.loading = false;
+      this.availableDomains = data.availableDomains;
+      this.availableDomainsBuffer = data.availableDomains;
+      this.availableTypes = data.types;
+      this.availableMainDomains = data.mainDomains;
+      this.model.type = _.first(this.availableTypes);
+
+      if (_.isEmpty(this.availableDomains)) {
+        this.model.domainType = this.NON_OVH_DOMAIN;
+        this.model.srvParam = false;
+        this.model.mxParam = false;
+      }
+    }
+
+    check2010Provider() {
+      if (this.exchange == null) {
+        return;
+      }
+
+      const isProviderAccount = this.services.exchangeServiceInfrastructure.isProvider();
+
+      if (
+        this.availableMainDomains != null
+        && isProviderAccount
+        && this.services.exchangeVersion.isVersion(2010)
+      ) {
+        this.setOrganization2010 = true;
+
+        if (_.isEmpty(this.availableMainDomains)) {
+          this.model.main = true;
+          this.model.organization2010 = null;
+        } else {
+          this.model.main = false;
+          this.model.attachOrganization2010 = _.first(this.availableMainDomains);
+        }
+      }
+    }
+
+    openingWizard() {
+      return this.services.ovhUserPref
+        .assign('WIZARD_HOSTED_CREATION_OPENING_PREFERENCE', {
+          shouldOpenWizard: true,
+        })
+        .finally(() => {
+          this.services.$rootScope.$broadcast('exchange.wizard_hosted_creation.display');
+          this.services.navigation.resetAction();
+        });
+    }
+
+    prepareModel() {
+      if (this.setOrganization2010) {
+        if (this.model.main) {
+          delete this.model.organization2010;
+        } else {
+          this.model.organization2010 = this.model.attachOrganization2010.name;
         }
 
-        isStep3Valid () {
-            return this.model.type;
-        }
+        delete this.model.attachOrganization2010;
+      }
 
-        onSearchValueChange () {
-            this.debouncedResetName();
-        }
+      delete this.model.domainType;
+      delete this.model.isUTF8Domain;
+      delete this.model.displayName;
+    }
 
-        prepareData (data) {
-            this.loading = false;
-            this.availableDomains = data.availableDomains;
-            this.availableDomainsBuffer = data.availableDomains;
-            this.availableTypes = data.types;
-            this.availableMainDomains = data.mainDomains;
-            this.model.type = this.availableTypes[0];
+    /* eslint-disable class-methods-use-this */
+    getDefaultLanguage() {
+      let defaultLanguage = '';
 
-            if (_.isEmpty(this.availableDomains)) {
-                this.model.domainType = this.NON_OVH_DOMAIN;
-                this.model.srvParam = false;
-                this.model.mxParam = false;
-            }
-        }
+      if (localStorage['univers-selected-language']) {
+        defaultLanguage = localStorage['univers-selected-language'];
+      }
 
-        check2010Provider () {
-            if (this.exchange == null) {
-                return;
-            }
+      return defaultLanguage;
+    }
+    /* eslint-enable class-methods-use-this */
 
-            const isProviderAccount = this.services.exchangeServiceInfrastructure.isProvider();
+    isFrenchLanguage() {
+      const language = this.getDefaultLanguage();
+      return language && /fr_[A-Z]{2}/.test(language);
+    }
 
-            if (this.availableMainDomains != null && isProviderAccount && this.services.exchangeVersion.isVersion(2010)) {
-                this.setOrganization2010 = true;
+    loadDomainData() {
+      this.loading = true;
 
-                if (_.isEmpty(this.availableMainDomains)) {
-                    this.model.main = true;
-                    this.model.organization2010 = null;
-                } else {
-                    this.model.main = false;
-                    this.model.attachOrganization2010 = this.availableMainDomains[0];
-                }
-            }
-        }
+      this.services.ExchangeDomains.retrievingDataToCreateDomains(
+        this.$routerParams.organization,
+        this.$routerParams.productId,
+      )
+        .then((data) => {
+          this.loading = false;
+          this.prepareData(data);
+          this.check2010Provider();
+        })
+        .catch((failure) => {
+          this.services.navigation.resetAction();
+          this.services.messaging.writeError(
+            this.services.$translate.instant('exchange_tab_domain_add_failure'),
+            failure,
+          );
+        });
+    }
 
-        openingWizard () {
-            return this.services
-                .ovhUserPref
-                .assign("WIZARD_HOSTED_CREATION_OPENING_PREFERENCE", {
-                    shouldOpenWizard: true
-                })
-                .finally(() => {
-                    this.services.$rootScope.$broadcast("exchange.wizard_hosted_creation.display");
-                    this.services.navigation.resetAction();
-                });
-        }
+    resetSearchValue() {
+      this.search.value = null;
+      this.availableDomains = _.clone(this.availableDomainsBuffer);
+    }
 
-        prepareModel () {
-            if (this.setOrganization2010) {
-                if (this.model.main) {
-                    delete this.model.organization2010;
-                } else {
-                    this.model.organization2010 = this.model.attachOrganization2010.name;
-                }
+    addDomain() {
+      this.prepareModel();
 
-                delete this.model.attachOrganization2010;
-            }
+      this.services.ExchangeDomains.addingDomain(this.model)
+        .then(() => {
+          this.services.messaging.writeSuccess(
+            this.services.$translate.instant('exchange_tab_domain_add_success'),
+          );
+        })
+        .catch((failure) => {
+          this.services.messaging.writeError(
+            this.services.$translate.instant('exchange_tab_domain_add_failure'),
+            failure,
+          );
+        })
+        .finally(() => {
+          this.services.navigation.resetAction();
+        });
+    }
 
-            delete this.model.domainType;
-            delete this.model.isUTF8Domain;
-            delete this.model.displayName;
-        }
+    resetName() {
+      this.model.displayName = '';
+      this.model.name = '';
+    }
 
-        /* eslint-disable class-methods-use-this */
-        getDefaultLanguage () {
-            let defaultLanguage = "";
+    search() {
+      this.resetName();
 
-            if (localStorage["univers-selected-language"]) {
-                defaultLanguage = localStorage["univers-selected-language"];
-            }
+      if (!_.isEmpty(this.search.value)) {
+        this.availableDomains = _.filter(
+          this.availableDomainsBuffer,
+          currentItem => _.includes(currentItem.displayName, this.search.value),
+        );
+      }
 
-            return defaultLanguage;
-        }
-        /* eslint-enable class-methods-use-this */
+      this.services.$scope.$apply();
+    }
 
-        isFrenchLanguage () {
-            const language = this.getDefaultLanguage();
-            return language && (/fr_[A-Z]{2}/).test(language);
-        }
+    checkDomain() {
+      if (this.model.domainType === this.NON_OVH_DOMAIN) {
+        this.model.srvParam = false;
+        this.services.$rootScope.$broadcast('wizard-goToStep', 3);
+      }
+    }
 
-        loadDomainData () {
-            this.loading = true;
+    checkDomainType() {
+      if (this.model.domainType === this.NON_OVH_DOMAIN) {
+        this.services.$rootScope.$broadcast('wizard-goToStep', 1);
+      }
+    }
 
-            this.services
-                .ExchangeDomains
-                .retrievingDataToCreateDomains(this.$routerParams.organization, this.$routerParams.productId)
-                .then((data) => {
-                    this.loading = false;
-                    this.prepareData(data);
-                    this.check2010Provider();
-                })
-                .catch((failure) => {
-                    this.services.navigation.resetAction();
-                    this.services.messaging.writeError(this.services.$translate.instant("exchange_tab_domain_add_failure"), failure);
-                });
-        }
+    changeName() {
+      this.model.name = punycode.toASCII(this.model.displayName);
+      this.model.isUTF8Domain = this.model.displayName !== this.model.name;
+    }
 
-        resetSearchValue () {
-            this.search.value = null;
-            this.availableDomains = _.clone(this.availableDomainsBuffer);
-        }
+    isStep2Valid() {
+      return (
+        this.model.type === 'AUTHORITATIVE'
+        || (this.model.mxRelay != null && this.model.type === 'NON_AUTHORITATIVE')
+      );
+    }
 
-        addDomain () {
-            this.prepareModel();
-
-            this.services
-                .ExchangeDomains
-                .addingDomain(this.model)
-                .then(() => {
-                    this.services.messaging.writeSuccess(this.services.$translate.instant("exchange_tab_domain_add_success"));
-                })
-                .catch((failure) => {
-                    this.services.messaging.writeError(this.services.$translate.instant("exchange_tab_domain_add_failure"), failure);
-                })
-                .finally(() => {
-                    this.services.navigation.resetAction();
-                });
-        }
-
-        resetName () {
-            this.model.displayName = "";
-            this.model.name = "";
-        }
-
-        search () {
-            this.resetName();
-
-            if (!_.isEmpty(this.search.value)) {
-                this.availableDomains = _.filter(this.availableDomainsBuffer, (currentItem) => _.includes(currentItem.displayName, this.search.value));
-            }
-
-            this.services.$scope.$apply();
-        }
-
-        checkDomain () {
-            if (this.model.domainType === this.NON_OVH_DOMAIN) {
-                this.model.srvParam = false;
-                this.services.$rootScope.$broadcast("wizard-goToStep", 3);
-            }
-        }
-
-        checkDomainType () {
-            if (this.model.domainType === this.NON_OVH_DOMAIN) {
-                this.services.$rootScope.$broadcast("wizard-goToStep", 1);
-            }
-        }
-
-        changeName () {
-            this.model.name = punycode.toASCII(this.model.displayName);
-            this.model.isUTF8Domain = this.model.displayName !== this.model.name;
-        }
-
-        isStep2Valid () {
-            return this.model.type === "AUTHORITATIVE" || (this.model.mxRelay != null && this.model.type === "NON_AUTHORITATIVE");
-        }
-
-        isNonOvhDomainValid () {
-            return this.model.name && (this.model.domainType !== this.NON_OVH_DOMAIN || this.services.Validator.isValidDomain(this.model.displayName));
-        }
-    });
+    isNonOvhDomainValid() {
+      return (
+        this.model.name
+        && (this.model.domainType !== this.NON_OVH_DOMAIN
+          || this.services.Validator.isValidDomain(this.model.displayName))
+      );
+    }
+  },
+);

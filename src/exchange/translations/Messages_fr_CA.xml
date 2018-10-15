@@ -445,7 +445,7 @@
    <translation id="exchange_ACTION_order_accounts_step2_pay_type_monthly" qtlid="79530">mensuel</translation>
    <translation id="exchange_ACTION_order_accounts_step2_pay_type_yearly" qtlid="79542">annuel</translation>
    <translation id="exchange_ACTION_order_accounts_step2_number" qtlid="139338">Nombre de comptes:</translation>
-   <translation id="exchange_ACTION_order_accounts_step2_price" qtlid="139416">{0} HT ({1} TTC)</translation>
+   <translation id="exchange_ACTION_order_accounts_step2_price" qtlid="139416">{0} avant taxes ({1} avec taxes)</translation>
    <translation id="exchange_ACTION_order_accounts_step2_total" qtlid="139429">Total facturé:</translation>
    <translation id="exchange_ACTION_order_accounts_step2_doing_message" qtlid="144149">Commande de comptes Exchange en cours...</translation>
    <translation id="exchange_ACTION_order_accounts_step2_success_message" qtlid="171214">Les comptes vont être créés dès le règlement du bon de commande : <br /><a href="{0}">{0}</a></translation>
@@ -486,14 +486,13 @@
    <translation id="exchange_account_add_password_hint_complex_1_3_3" qtlid="486178">des chiffres entre 0 et 9,</translation>
    <translation id="exchange_account_add_password_hint_complex_1_3_4" qtlid="486191">des caractères spéciaux.</translation>
    <translation id="exchange_account_add_passwordConfirmation_label" qtlid="9983">Confirmation</translation>
-   <translation id="exchange_account_add_order_button" qtlid="43558">Commander</translation>
+   <translation id="exchange_account_add_confirm_button" qtlid="37923">Ajouter</translation>
    <translation id="exchange_account_add_field_error_required" qtlid="472294">Veuillez compléter ce champ.</translation>
    <translation id="exchange_account_add_field_error_doesntRespectComplexityRules" qtlid="486204">Ce champ ne respecte pas les règles de complexité.</translation>
    <translation id="exchange_account_add_field_error_passwordConfirmation" qtlid="139637">Mots de passe différents.</translation>
    <translation id="exchange_account_add_field_error_pattern" qtlid="472385">Veuillez saisir un format valide.</translation>
    <translation id="exchange_account_add_submit_success" qtlid="486217">La création du compte {0} a été effectuée. Vous pourrez l’utiliser dans quelques minutes.</translation>
    <translation id="exchange_ACTION_add_account_legal_warning" qtlid="209099">Je reconnais qu'OVH procédera à l’exécution immédiate de la prestation à compter de la validation de ma commande et à ce titre je renonce expressément à exercer mon droit de rétractation conformément aux dispositions de l’article L.121-21-8 du code de la consommation.</translation>
-   <translation id="exchange_account_add_confirm_button" qtlid="37923">Ajouter</translation>
    <translation id="exchange_ACTION_add_account_title" qtlid="143225">Ajouter un compte Exchange</translation>
    <translation id="exchange_ACTION_add_account_step1_email_label" qtlid="137244">Compte courriel</translation>
    <translation id="exchange_ACTION_add_account_button" qtlid="21487">Ajouter un compte</translation>
@@ -1680,4 +1679,5 @@
    <translation id="exchange_wizardHostedCreation_lastDialog_closeButton" qtlid="450558">Finaliser</translation>
 
    <translation id="exchange_table_manage_entry" qtlid="404395">: gérer</translation>
+   <translation id="sharepoint_activate_which_service_label" qtlid="297592">Serveur Exchange à associer</translation>
 </translations>
